@@ -1,0 +1,79 @@
+/*-------------------------------------
+Orange color scheme
+--------------------------------------*/
+/* Background color of your site */
+body {
+	background: orange;
+}
+/* controls the font color of the navigation menus */
+#access .menu li a, #access2 .menu li a {
+	color: orange;
+}
+/* controls the background color of the navigation menus on hover */
+#access ul ul, #access2 ul ul,
+#access li:hover > a,
+#access ul ul :hover > a,
+#access a:focus,
+#access2 li:hover > a,
+#access2 ul ul :hover > a,
+#access2 a:focus  {
+	background: orange;
+}
+/* controls the colors of the submenus in the navigation on hover */
+#access .menu ul.children > li:hover > a,
+#access .menu ul.sub-menu > li:hover > a,
+#access .menu > ul > li:hover > a,
+#access .menu > li:hover > a,
+#access2 .menu ul.children > li:hover > a,
+#access2 .menu ul.sub-menu > li:hover > a,
+#access2 .menu > ul > li:hover > a,
+#access2 .menu > li:hover > a {
+	color: #333;
+	background: orange;
+}
+/* Navigation sub-menus background and text color */
+#access .menu ul.children li a,
+#access .menu ul.sub-menu li a,
+#access2 .menu ul.children li a,
+#access2 .menu ul.sub-menu li a {
+	background: #333; /* default color #333, might want to leave this */
+	border-bottom: dotted 1px #555;
+	color: orange; /* this color is usually your default link color */
+}
+/* Wp-Pagenavi styles */
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	background: orange;
+	color: #333;
+}
+#content nav a:hover { text-shadow: none;}
+
+/* edit link background and text color on hover */
+.edit-link a:hover, a.comment-reply-link:hover, a.comment-reply-link:focus, a.comment-reply-link:active { 
+	background: orange  !important; 
+	color: #333 !important; 
+}
+
+/* navigation links (previous/next) on hover background and text */
+#content nav a:hover { 
+	background: orange ; 
+	color: #333;
+}
+
+/* background color of the comment respond box */
+#respond { background: #f4f4f4;}
+
+/* color of the active text (comment author) in the respond box, make light if background is dark and vice versa */
+#respond a {color: #333;}
+
+/* remove this if you want text shadow on the respond box */
+#reply-title  {text-shadow: none;}
+
+/* recent related posts title background color */
+#recent { background-color: orange; color: #666; }
+
+/* comment bubble on index page background and font color */
+.entry-header .comments-link a:hover,
+.entry-header .comments-link a:focus{
+	background-color: orange !important;
+	color: #333;
+}

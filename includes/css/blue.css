@@ -1,0 +1,69 @@
+/*-------------------------------------
+Blue color scheme
+--------------------------------------*/
+/* Background color of your site */
+body {
+	background: #4A6CC1;
+}
+/* controls the font color of the navigation menus */
+#access .menu li a, #access2 .menu li a {
+	color: #4A6CC1;
+}
+/* controls the background color of the navigation menus on hover */
+#access ul ul, #access2 ul ul,
+#access li:hover > a,
+#access ul ul :hover > a,
+#access a:focus,
+#access2 li:hover > a,
+#access2 ul ul :hover > a,
+#access2 a:focus  {
+	background: #4A6CC1 !important;
+}
+/* controls the colors of the submenus in the navigation on hover */
+#access .menu ul.children > li:hover > a,
+#access .menu ul.sub-menu > li:hover > a,
+#access .menu > ul > li:hover > a,
+#access .menu > li:hover > a,
+#access2 .menu ul.children > li:hover > a,
+#access2 .menu ul.sub-menu > li:hover > a,
+#access2 .menu > ul > li:hover > a,
+#access2 .menu > li:hover > a {
+	color: white;
+	background: #4A6CC1;
+}
+/* Navigation sub-menus background and text color */
+#access .menu ul.children li a,
+#access .menu ul.sub-menu li a,
+#access2 .menu ul.children li a,
+#access2 .menu ul.sub-menu li a {
+	background: #333; /* default color #333, might want to leave this */
+	border-bottom: dotted 1px #555;
+	color: #4A6CC1; /* this color is usually your default link color */
+}
+/* Wp-Pagenavi styles */
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	background: #4A6CC1;
+	color: #efefef;	
+}
+/* edit link background and text color on hover */
+.edit-link a:hover, a.comment-reply-link:hover, a.comment-reply-link:focus, a.comment-reply-link:active { 
+	background: #4A6CC1 !important; 
+}
+/* background color of the comment respond box */
+#respond{ background: #f4f4f4;}
+
+/* color of the active text (comment author) in the respond box, make light if background is dark and vice versa */
+#respond a {color: #333;}
+
+/* remove this if you want text shadow on the respond box */
+#reply-title  {text-shadow: none;}
+
+/* recent related posts title background color */
+#recent { background-color: #4A6CC1; color: #efefef; }
+
+/* comment bubble on index page background and font color */
+.entry-header .comments-link a:hover,
+.entry-header .comments-link a:focus{
+ background-color: 4A6CC1 !important;
+ color: #efefef;
+}

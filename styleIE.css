@@ -1,0 +1,28 @@
+/* IE only CSS */
+/* Set default next/previous default style for IE */
+#content nav a {
+	background: none;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin-right: 5px;
+	padding: 5px 15px;
+	text-decoration: none;
+	border: none;
+}
+#content nav a:hover {
+	background: none;
+	color: #666666;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin-right: 5px;
+	padding: 5px 15px;
+	text-decoration: none;
+	border: none;
+	color:#333;
+}
+/* small fix for default menu */
+#access {
+    padding-top: 0;
+}

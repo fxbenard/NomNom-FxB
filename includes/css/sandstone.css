@@ -1,0 +1,50 @@
+#access .menu li a,#access2 .menu li a {
+color:#dec5ad;
+}
+
+#access .menu ul.children > li:hover > a,#access .menu ul.sub-menu > li:hover > a,#access .menu > ul > li:hover > a,#access .menu > li:hover > a,#access2 .menu ul.children > li:hover > a,#access2 .menu ul.sub-menu > li:hover > a,#access2 .menu > ul > li:hover > a,#access2 .menu > li:hover > a {
+color:#333;
+background:#dec5ad;
+}
+
+#access .menu ul.children li a,#access .menu ul.sub-menu li a,#access2 .menu ul.children li a,#access2 .menu ul.sub-menu li a {
+background:#333;
+border-bottom:dotted 1px #555;
+color:#dec5ad;
+}
+
+.wp-pagenavi a:hover,.wp-pagenavi span.current {
+background:#dec5ad;
+color:#333;
+}
+
+.edit-link a:hover,a.comment-reply-link:hover,a.comment-reply-link:focus,a.comment-reply-link:active {
+background:#dec5ad!important;
+color:#333!important;
+}
+
+#respond {
+background:#f4f4f4;
+}
+
+#respond a {
+color:#333;
+}
+
+#reply-title {
+text-shadow:none;
+}
+
+#recent {
+background-color:#dec5ad;
+color:#666;
+}
+
+.entry-header .comments-link a:hover,.entry-header .comments-link a:focus {
+background-color:#dec5ad!important;
+color:#333;
+}
+
+body,#access ul ul,#access2 ul ul,#access li:hover > a,#access ul ul :hover > a,#access a:focus,#access2 li:hover > a,#access2 ul ul :hover > a,#access2 a:focus {
+background:#dec5ad;
+}
