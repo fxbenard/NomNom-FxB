@@ -32,37 +32,37 @@ function nomnom_twentyeleven_layouts( $layouts ) {
 // Wider one-column layout
 	$layouts['content-no-sidebar'] = array(
 		'value' => 'content-no-sidebar',
-		'label' => __( 'One-column, 890px Wide', 'twentyeleven' ),
+		'label' => __( 'One-column, 890px Wide', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/layouts/content-wide.png',
 );
 // Narrow layout with left sidebar
 	$layouts['narrow-content-left-sidebar'] = array(
 		'value' => 'narrow-content-left-sidebar',
-		'label' => __( '875px, Left Sidebar', 'twentyeleven' ),
+		'label' => __( '875px, Left Sidebar', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/layouts/narrow-left-sidebar.png',
 );
 // Narrow layout with right sidebar
 	$layouts['narrow-content-right-sidebar'] = array(
 		'value' => 'narrow-content-right-sidebar',
-		'label' => __( '875px, Right Sidebar', 'twentyeleven' ),
+		'label' => __( '875px, Right Sidebar', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/layouts/narrow-right-sidebar.png',
 );
 // Three Column Layout
 	$layouts['sidebar-content-sidebar'] = array(
 		'value' => 'sidebar-content-sidebar',
-		'label' => __( '3 Column, Left Right Sidebars', 'twentyeleven' ),
+		'label' => __( '3 Column, Left Right Sidebars', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/layouts/3-column.png',
 );
 // Three Column Layout 2 left
 	$layouts['sidebar-sidebar-content'] = array(
 		'value' => 'sidebar-sidebar-content',
-		'label' => __( '3 Column, 2 Left Sidebars', 'twentyeleven' ),
+		'label' => __( '3 Column, 2 Left Sidebars', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/layouts/2-left.png',
 );
 // Three Column Layout
 	$layouts['content-sidebar-sidebar'] = array(
 		'value' => 'content-sidebar-sidebar',
-		'label' => __( '3 Column, 2 Right Sidebars', 'twentyeleven' ),
+		'label' => __( '3 Column, 2 Right Sidebars', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/layouts/2-right.png',
 );
 	return $layouts;
@@ -105,56 +105,56 @@ function nomnom_color_schemes( $color_schemes ) {
 	// Orange
 	$color_schemes['orange'] = array(
 		'value' => 'orange',
-		'label' => __( 'Orange', 'twentyeleven' ),
+		'label' => __( 'Orange', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/colors/orange.png',
 		'default_link_color' => '#FFA500',
 	);
 	// Sandstone
 	$color_schemes['sandstone'] = array(
 		'value' => 'sandstone',
-		'label' => __( 'Sandstone', 'twentyeleven' ),
+		'label' => __( 'Sandstone', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/colors/sandstone.png',
 		'default_link_color' => '#dec5ad'
 	);
 	// Pink
 	$color_schemes['pink'] = array(
 		'value' => 'pink',
-		'label' => __( 'pink', 'twentyeleven' ),
+		'label' => __( 'pink', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/colors/pink.png',
 		'default_link_color' => '#A14875'
 	);
 	// Mauve
 	$color_schemes['mauve'] = array(
 		'value' => 'mauve',
-		'label' => __( 'Mauve', 'twentyeleven' ),
+		'label' => __( 'Mauve', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/colors/mauve.png',
 		'default_link_color' => '#ca97cc'
 	);
 	// lavender
 	$color_schemes['lavender'] = array(
 		'value' => 'lavender',
-		'label' => __( 'Lavender', 'twentyeleven' ),
+		'label' => __( 'Lavender', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/colors/lavender.png',
 		'default_link_color' => '#C7AFED'
 	);
 	// Light Blue
 	$color_schemes['light-blue'] = array(
 		'value' => 'light-blue',
-		'label' => __( 'Light Blue', 'twentyeleven' ),
+		'label' => __( 'Light Blue', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/colors/light-blue.png',
 		'default_link_color' => '#5685c7'
 	);
 	// Blue
 	$color_schemes['blue'] = array(
 		'value' => 'blue',
-		'label' => __( 'Blue', 'twentyeleven' ),
+		'label' => __( 'Blue', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/colors/blue.png',
 		'default_link_color' => '#4a6cc1'
 	);
 	// Custom
 	$color_schemes['charcoal'] = array(
 		'value' => 'charcoal',
-		'label' => __( 'Charcoal', 'twentyeleven' ),
+		'label' => __( 'Charcoal', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/colors/charcoal.png',
 		'default_link_color' => '#666'
 	);
@@ -199,7 +199,7 @@ function twentyeleven_enqueue_color_scheme_all( $color_scheme ) {
 ----------------------------------------------- */
 add_action( 'admin_menu', 'nomnom_admin_menu' );
 function nomnom_admin_menu() {
-    add_theme_page( 'NomNom Options', 'NomNom Options', 'edit_theme_options', 'nomnom-theme-options', 'nomnom_theme_options' );
+    add_theme_page( 'NomNom Options', __('NomNom Options','nomnom'), 'edit_theme_options', 'nomnom-theme-options', 'nomnom_theme_options' );
 }
 function nomnom_theme_options() {
 ?>
@@ -223,18 +223,18 @@ function nomnom_theme_options() {
 <!-- Begin the html for the theme options section -->
     <div id="theme-admin" class="wrap">
 	    <?php     //Shows the page's name and an icon if one has been provided
-	screen_icon(); echo "<h2>" . get_current_theme() . __( ' - Theme Options' ) . "</h2>";
+	screen_icon(); echo "<h2>" . NomNom . __( ' - Theme Options','nomnom' ) . "</h2>";
 	?>
 <br>
 <div id="tabs">
 	<ul>
-		<li><a href="#tabs-1">Theme Info</a></li>
-		<li><a href="#tabs-2">General Options</a></li>
-		<li><a href="#tabs-3">Font & Color Options</a></li>
-		<li><a href="#tabs-4">Slider Options</a></li>
-		<li><a href="#tabs-5">Custom CSS</a></li>
-		<li><a href="#tabs-6">Help & Tips</a></li>
-		<li><a href="#tabs-7">Site Preview</a></li>
+		<li><a href="#tabs-1"><?php _e('Theme Info','nomnom');?></a></li>
+		<li><a href="#tabs-2"><?php _e('General Options','nomnom');?></a></li>
+		<li><a href="#tabs-3"><?php _e('Font & Color Options','nomnom');?></a></li>
+		<li><a href="#tabs-4"><?php _e('Slider Options','nomnom');?></a></li>
+		<li><a href="#tabs-5"><?php _e('Custom CSS','nomnom');?></a></li>
+		<li><a href="#tabs-6"><?php _e('Help & Tips','nomnom');?></a></li>
+		<li><a href="#tabs-7"><?php _e('Site Preview','nomnom');?></a></li>
 	</ul>
 	<div id="tabs-1">		
 		<?php fetch_template ("general_info_options", $data); ?>
@@ -632,7 +632,7 @@ function nomnom_update_slider ()
 	update_option( 'nomnom_trans_speed', $_POST['trans_speed'] );	
 	update_option( 'nomnom_image_pause', $_POST['image_pause'] );		
 		
-	echo "Nomnom slider updated...";
+	echo __('Nomnom slider updated...','nomnom');
 	die ();
 }
 
@@ -687,7 +687,7 @@ add_action( 'admin_init', 'nomnom_register_admin_settings' );
 
     // Settings fields and sections
     add_settings_section( 'section_typography', '', 'nomnom_section_typography', 'nomnom-options' );
-    add_settings_field( 'primary-font', 'Select font to be used for titles.', 'nomnom_field_primary_font', 'nomnom-options', 'section_typography' );
+    add_settings_field( 'primary-font', __('Select font to be used for titles.','nomnom'), 'nomnom_field_primary_font', 'nomnom-options', 'section_typography' );
 }
 
 function nomnom_section_typography() {

@@ -1,6 +1,13 @@
 <?php
 ob_start();
 
+/* Localization. */
+	add_action('after_setup_theme', 'fxb_setup');
+
+function fxb_setup() {
+load_child_theme_textdomain('nomnom', STYLESHEETPATH . '/languages');}
+		
+
 // Load the extra layout and styles from their own file
 require_once(STYLESHEETPATH . '/includes/theme-options.php');
 require_once(STYLESHEETPATH . '/adsense-options.php');
@@ -36,11 +43,12 @@ if (is_admin())
 	add_action('init','color_options_script');
 	add_action('init','add_nomnom_scripts');
 
+
 // Add a second menu
 register_nav_menus( array(
-	'secondary' => __( 'Top Menu (Above the Header)', 'NomNom'),
-	'primary' => __( 'Primary Menu', 'NomNom' ),
-	'third' => __( 'Footer Menu', 'NomNom' ),
+	'secondary' => __( 'Top Menu (Above the Header)', 'nomnom'),
+	'primary' => __( 'Primary Menu', 'nomnom' ),
+	'third' => __( 'Footer Menu', 'nomnom' ),
  ) );
 
 // Add a sidebar to single posts view - http://transformationpowertools.com
@@ -146,3 +154,4 @@ function twentyelevenchild_enqueue_color_scheme() {
     do_action( 'twentyelevenchild_enqueue_color_scheme', 'dark_child' );
 }
 add_action( 'wp_enqueue_scripts', 'twentyelevenchild_enqueue_color_scheme', 11);
+
