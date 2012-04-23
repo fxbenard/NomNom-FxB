@@ -1,0 +1,124 @@
+/* this stylesheet contains extra CSS effects for NomNom */
+/* All CSS3 effects */
+h1,h2,h3,h4,h5,h6,h1.entry-title,
+h1.entry-title  a,h3.widget-title,
+.entry-title, #site-title a {
+	text-shadow: 1px 4px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);	
+}
+/* Rounded corners in subnav  http://designerfied.com
+-------------------------------------------------------*/
+	#access ul ul,  #access2 ul ul {
+	background: red;
+	-moz-border-radius-bottomleft: .5em;
+	-moz-border-radius-bottomright: .5em;
+	-webkit-border-bottom-left-radius: .5em;
+	-webkit-border-bottom-right-radius: .5em;
+	border-bottom-left-radius: .5em;
+	border-bottom-right-radius: .5em;
+	display: none;
+	float: left;
+	margin: 0;
+	padding: 0 0 8px 0;
+	top: 3.333em;
+	left: 0;
+	width: auto;
+	z-index: 99999;
+}
+/* Special css3 effects
+--------------------------*/
+ #main:hover a , a:hover, input:hover, input:focus, textarea:hover, textarea:focus, a:hover img {
+	-webkit-transition:all 0.2s ease-in-out; /* Safari and Chrome */
+	-moz-transition:all 0.2s ease-in-out; /* Firefox 4 */
+	-o-transition:all 0.2s ease-in-out; /* Opera */
+}
+#page {
+	box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+	/*-moz-border-radius: .5em;
+	-moz-border-radius: .5em;
+	-webkit-border-radius: .5em;
+	-webkit-border-radius: .5em;
+	border-radius: .5em;
+	border-radius: .5em; round-corners uncomment to use*/
+}
+ #site-generator {
+	/*-moz-border-radius-bottomleft: .5em;
+	-moz-border-radius-bottomright: .5em;
+	-webkit-border-bottom-left-radius: .5em;
+	-webkit-border-bottom-right-radius: .5em;
+	border-bottom-left-radius: .5em;
+	border-bottom-right-radius: .5em; round-corners uncomment to use */
+}
+/* Set default next/previous default style */
+ #content nav a {
+	background: none repeat scroll 0 0 #EEEEEE;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari*/
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+	border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	text-shadow: 0 1px 0 #fff;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin-right: 5px;
+	padding: 5px 15px;
+	text-decoration: none;
+	border: 1px solid #ddd;
+}
+ #content nav a:hover {
+	background: none repeat scroll 0 0 #EEEEEE;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari*/
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+	border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	text-shadow: 0 1px 0 #fff;
+	color: #666666;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin-right: 5px;
+	padding: 5px 15px;
+	text-decoration: none;
+	border: 1px solid #ddd;
+	border-color: #686868;
+	color:#333;
+	-webkit-box-shadow: 0 1px 1px #666;
+	-moz-box-shadow: 0 1px 1px #666;
+	box-shadow: 0 1px 1px #666;
+}
+/*	Wp-PageNavi CSS3 style */
+
+.wp-pagenavi a,.wp-pagenavi span.current,.wp-pagenavi span.pages {
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+}
+.wp-pagenavi a:hover,.wp-pagenavi span.current {
+	-webkit-box-shadow: 0 1px 1px #666;
+	-moz-box-shadow: 0 1px 1px #666;
+	box-shadow: 0 1px 1px #666;
+}
+/* fix for page nav in chrome css effects on*/
+#nav-single{ width:200px;}

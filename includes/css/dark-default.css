@@ -115,3 +115,7 @@ img[class*="align"], img[class*="wp-image-"], #content .gallery .gallery-icon im
     border: 1px solid #333333;
     padding: 6px;
 }
+/* minimal comment fix */
+.tidy-comments  .commentlist > li.comment {
+	border-bottom: 1px solid #333;
+	}

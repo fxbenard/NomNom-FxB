@@ -3,7 +3,7 @@ Theme URI: http://zeaks.org/themes-2/nomnom-theme/
 Description: Child theme for the Twenty Eleven theme
 Author: Scott Dixon - Color schemes by my awesome girlfriend Heather :D
 Author URI: http://zeaks.org
-Version: 1.7
+Version: 1.8
 
 Credits: 
 http://designerfied.com/ for superfish menu and wp-pagenavi style
@@ -11,7 +11,11 @@ http://theme.fm/ help with color scheme and layout functions
 http://designisphilosophy.com/ for the cool recent related comments
 My girlfriend Heather for picking out the color schemes
 
-CHANGELOG -
+CHANGELOG -v1.8 4/20/2012
+
+Added 2 new layouts. Left and Right sidebars with less padding. 6% more overall content space.Split site wide comments option, now you can choose from post or page comments - Thanks Nick
+Added option to turn off NomNoms CSS3 effects #css-effects (Twenty Eleven CSS3 stays)
+Fixed small issue with top page nav in Chrome.
 
 v1.7 4/18/2012
 

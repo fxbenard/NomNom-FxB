@@ -12,8 +12,9 @@
  * @since Twenty Eleven 1.0
  */
 ?>
-<?php if (get_option( 'nomnom_comment_form' )): ?><!-- switch for comment bubble on index -->	
-
+		<?php if (get_option( 'nomnom_minimal_comments' )): ?><!-- switch for minimal comments -->		
+			<div class="tidy-comments">
+		<?php endif; ?><!-- end minimal comments switch -->
 	<div id="comments">
 	<?php if ( post_password_required() ) : ?>
 		<p class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'twentyeleven' ); ?></p>
@@ -77,4 +78,6 @@
 	<?php comment_form(); ?>
 
 </div><!-- #comments -->
-<?php endif; ?><!-- end comment_form switch -->
+		<?php if (get_option( 'nomnom_minimal_comments' )): ?><!-- switch for minimal comments -->		
+			</div>
+		<?php endif; ?><!-- end minimal comments -->

@@ -83,6 +83,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php if (get_option( 'nomnom_advanced_style' )): ?><!-- switch for CSS3 effects -->
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css3.css" media="screen" type="text/css" />
+<?php endif; ?><!-- end nomnom_advanced_style -->
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
 

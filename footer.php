@@ -31,7 +31,7 @@
 
 			<div id="site-generator">
 				<?php do_action( 'twentyeleven_credits' ); ?>
-				<span class="wpcredits"><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php printf( __( 'Powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a></span> :: <span class="credits"><a href="http://zeaks.org/nomnom-twenty-eleven-child-theme/" title="NomNom 1.7" >NomNom by Zeaks</a></span>
+				<span class="wpcredits"><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven'  ) ); ?>" target="_blank" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php printf( __( 'Powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a></span> :: <span class="credits"><a href="http://zeaks.org/nomnom-twenty-eleven-child-theme/" title="NomNom 1.8" target="_blank">NomNom by Zeaks</a></span>
 				<br><?php echo nomnom_copyright(); ?>
 			</div>
 	</footer><!-- #colophon -->

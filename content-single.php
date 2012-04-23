@@ -11,12 +11,13 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
-
+	<?php if (get_option( 'nomnom_posted_on' )): ?><!-- switch for nomnom posted on -->
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php twentyeleven_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
+	<?php endif; ?><!-- end nomnom posted on -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -32,6 +33,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
+<?php if (get_option( 'nomnom_single_meta' )): ?><!-- switch for nomnom single meta -->	
 		<?php
 			/* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list( __( ', ', 'twentyeleven' ) );
@@ -56,6 +58,7 @@
 				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) )
 			);
 		?>
+	<?php endif; ?><!-- end nomnom single meta -->
 		<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 
 		<?php if ( get_the_author_meta( 'description' ) && ( ! function_exists( 'is_multi_author' ) || is_multi_author() ) ) : // If a user has filled out their description and this is a multi-author blog, show a bio on their entries ?>

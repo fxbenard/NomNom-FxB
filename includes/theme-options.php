@@ -14,7 +14,7 @@ function my_body_classes( $classes ) {
     $options = twentyeleven_get_theme_options();
     $current_layout = $options['theme_layout'];
 	if ( in_array( $current_layout, array( 'narrow-content-left-sidebar', 'narrow-content-right-sidebar', 'sidebar-content-sidebar',
-	'sidebar-sidebar-content', 'content-sidebar-sidebar', 'content-no-sidebar') ) )
+	'sidebar-sidebar-content', 'content-sidebar-sidebar', 'content-no-sidebar', 'less-right-sidebar', 'less-left-sidebar') ) )
     $classes[] = 'custom-layouts';
     $classes[] = $current_layout;
     return $classes;
@@ -65,6 +65,21 @@ function nomnom_twentyeleven_layouts( $layouts ) {
 		'label' => __( '3 Column, 2 Right Sidebars', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/layouts/2-right.png',
 );
+
+// Less padding right sidebar layout
+	$layouts['less-right-sidebar'] = array(
+		'value' => 'less-right-sidebar',
+		'label' => __( 'Right Sidebar - Less Padding', 'twentyeleven' ),
+		'thumbnail' => get_stylesheet_directory_uri() . '/images/layouts/less-right.png',
+);
+// Less padding left sidebar layout
+	$layouts['less-left-sidebar'] = array(
+		'value' => 'less-left-sidebar',
+		'label' => __( 'Left Sidebar - Less Padding', 'twentyeleven' ),
+		'thumbnail' => get_stylesheet_directory_uri() . '/images/layouts/less-left.png',
+);
+
+
 	return $layouts;
 }
 
@@ -92,6 +107,14 @@ function my_twentyeleven_layout_classes( $classes, $current_layout ) {
 	// 3 Column layout with two right sidebars
 		if ( 'content-sidebar-sidebar' == $current_layout )
 		return array( 'two-right', 'two-right' );
+	else
+	// 2 Column layout right sidebar less padding
+		if ( 'less-right-sidebar' == $current_layout )
+		return array( 'less-right', 'less-right' );			
+	else
+	// 2 Column layout left sidebar less padding
+		if ( 'less-left-sidebar' == $current_layout )
+		return array( 'less-left', 'less-left' );		
 	return $classes;
 }
 
@@ -422,11 +445,14 @@ function nomnom_theme_options() {
 					display					: jQuery("#nomnom_default_menu").val(),
 					width					: jQuery("#resize_header_options_width").val(),
 					height 					: jQuery("#resize_header_options_height").val(),
-					post_thumb				: jQuery("#nomnom_post_thumbnail").val(),
 					post_avatar				: jQuery("#nomnom_post_avatar").val(),
 					post_related			: jQuery("#nomnom_post_related").val(),
 					show_bubble				: jQuery("#nomnom_show_bubble").val(),
-					comment_form			: jQuery("#nomnom_comment_form").val(),
+					
+					comment_form_post		: jQuery("#nomnom_comment_form_post").val(),
+					comment_form_page		: jQuery("#nomnom_comment_form_page").val(),
+					minimal_comments		: jQuery("#nomnom_minimal_comments").val(),
+					advanced_style		    : jQuery("#nomnom_advanced_style").val(),
 					custom_css				: jQuery("#nomnom_custom_css").val(),
 					show_search				: jQuery("#nomnom_show_search").val(),
 					
@@ -449,7 +475,42 @@ function nomnom_theme_options() {
 						 $("#theme_options_msg").show("normal");
 					  }
 				}).responseText;
-			});	
+			});
+			
+		jQuery("#nomnom_update_post_options").click(function(e){
+				
+				 $("#theme_post_options_msg").hide("normal");
+
+
+				var data = {
+
+					post_thumb				: jQuery("#nomnom_post_thumbnail").val(),					
+					posted_in				: jQuery("#nomnom_posted_in").val(),
+					posted_on			    : jQuery("#nomnom_posted_on").val(),
+					post_tags				: jQuery("#nomnom_post_tags").val(),
+					single_meta				: jQuery("#nomnom_single_meta").val(),
+					leave_reply				: jQuery("#nomnom_leave_reply").val(),
+					post_tags				: jQuery("#nomnom_post_tags").val(),
+					
+					action					: 'nomnom_update_post_options',
+					whatever				: Math.random()
+					
+				};
+	
+					
+				var bodyContent = jQuery.ajax({
+					  url: ajaxurl,
+					  global: false,
+					  type: "POST",
+					  data: data,
+					  dataType: "html",
+					  async: false,	
+					  success: function(result){
+					  	 $("#theme_post_options_msg").html("Post Options Saved");
+						 $("#theme_post_options_msg").show("normal");
+					  }
+				}).responseText;
+			});
 			
 		jQuery("#nomnom_update_slider").click(function(e){
 				$("#slider_options_msg").hide ("normal");
@@ -494,6 +555,7 @@ add_action( 'wp_ajax_nomnom_resize_header', "nomnom_resize_header" );
 add_action( 'wp_ajax_nomnom_update_nomnom_default_menu', "nomnom_update_nomnom_default_menu" );
 add_action( 'wp_ajax_nomnom_update_slider', "nomnom_update_slider" );
 add_action( 'wp_ajax_nomnom_update_options', "nomnom_update_options" );
+add_action( 'wp_ajax_nomnom_update_post_options', "nomnom_update_post_options" );
 add_action( 'wp_ajax_nomnom_update_css_options', "nomnom_update_css_options" );
 add_action( 'wp_ajax_nomnom_update_color_options', "nomnom_update_color_options" );
 add_action( 'wp_ajax_nomnom_load_default_color_font_options', "nomnom_load_default_color_font_options" );
@@ -505,7 +567,15 @@ add_filter('twentyeleven_header_image_width','nomnom_resize_header_width');
 	add_option ('nomnom_default_menu', 1);
 	add_option ('nomnom_display_related', 1);
 	add_option ('nomnom_display_bubble', 1);
-	add_option ('nomnom_comment_form', 1);
+	add_option ('nomnom_single_meta', 1);
+	add_option ('nomnom_leave_reply', 1);
+	add_option ('nomnom_posted_on', 1);
+	add_option ('nomnom_posted_in', 1);
+	add_option ('nomnom_post_tags', 1);	
+	add_option ('nomnom_comment_form_post', 1);
+	add_option ('nomnom_comment_form_page', 1);
+	add_option ('nomnom_minimal_comments', 1);
+	add_option ('nomnom_advanced_style', 1);
 	add_option ('nomnom_display_search', 1);
 
 function nomnom_load_default_color_font_options ()
@@ -602,23 +672,35 @@ function nomnom_update_options ()
 	$resize_header_options = array('width'	=> $_POST['width'], 'height' => $_POST['height']);
 	update_option( 'resize_header_options', $resize_header_options );
 	update_option( 'nomnom_default_menu', $_POST['display'] );	
-	update_option( 'nomnom_display_post_image', $_POST['post_thumb'] );
 	update_option( 'nomnom_display_avatar_image', $_POST['post_avatar'] );
 	update_option( 'nomnom_display_related', $_POST['post_related'] );
-	update_option( 'nomnom_display_bubble', $_POST['show_bubble'] );
-	update_option( 'nomnom_comment_form', $_POST['comment_form'] );
+	update_option( 'nomnom_display_bubble', $_POST['show_bubble'] );	
+	update_option( 'nomnom_comment_form_post', $_POST['comment_form_post'] );
+	update_option( 'nomnom_comment_form_page', $_POST['comment_form_page'] );
+	update_option( 'nomnom_minimal_comments', $_POST['minimal_comments'] );
+	update_option( 'nomnom_advanced_style', $_POST['advanced_style'] );
 	update_option( 'nomnom_display_search', $_POST['show_search'] );
 
+	echo __('Nomnom Options updated...','nomnom');
+	die ();
+}
+function nomnom_update_post_options ()
+{
+	update_option( 'nomnom_display_post_image', $_POST['post_thumb'] );
+	update_option( 'nomnom_single_meta', $_POST['single_meta'] );
+	update_option( 'nomnom_leave_reply', $_POST['leave_reply'] );	
+	update_option( 'nomnom_posted_on', $_POST['posted_on'] );
+	update_option( 'nomnom_posted_in', $_POST['posted_in'] );
+	update_option( 'nomnom_post_tags', $_POST['post_tags'] );	
 
 	echo "Nomnom Options updated...";
 	die ();
 }
-
 function nomnom_update_css_options ()
 {
 	update_option( 'nomnom_custom_css', $_POST['custom_css'] );
-
-	echo "Custom CSS updated...";
+	
+	echo __('Custom CSS updated...','nomnom');
 	die ();
 }
 
@@ -626,8 +708,7 @@ function nomnom_update_slider ()
 {
 	update_option ("nomnom_has_slider", $_POST['slider']);
 	update_option ("nomnom_slider_featured_category", $_POST['cat']);
-	update_option ("nomnom_slider_count", $_POST['max_count']);	
-	
+	update_option ("nomnom_slider_count", $_POST['max_count']);		
 	update_option ("nomnom_slider_effects", $_POST['slider_effects']);		
 	update_option( 'nomnom_trans_speed', $_POST['trans_speed'] );	
 	update_option( 'nomnom_image_pause', $_POST['image_pause'] );		
@@ -687,7 +768,7 @@ add_action( 'admin_init', 'nomnom_register_admin_settings' );
 
     // Settings fields and sections
     add_settings_section( 'section_typography', '', 'nomnom_section_typography', 'nomnom-options' );
-    add_settings_field( 'primary-font', __('Select font to be used for titles.','nomnom'), 'nomnom_field_primary_font', 'nomnom-options', 'section_typography' );
+    add_settings_field( 'primary-font', 'Select font to be used for titles.', 'nomnom_field_primary_font', 'nomnom-options', 'section_typography' );
 }
 
 function nomnom_section_typography() {

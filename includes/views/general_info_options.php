@@ -10,13 +10,11 @@
 						<blockquote>
 	
 	<?php echo '<p>'.__('Thanks for using NomNom Twenty Eleven child theme.','nomnom').'</p>' ;?>
-	<br>
+
 	<?php echo '<p>'.sprintf(__('Click here to go to <a href="%1$s"> Theme Options </a> page and select from 10 color schemes and 9 layouts <br> Visit the <a href="%2$s">Theme Homepage</a>','nomnom'),'themes.php?page=theme_options','http://zeaks.org/nomnom-twenty-eleven-child-theme/" target="_blank').'</p>' ;?>
 
-	<br>
 	<?php echo'<p>'.sprintf(__('If your having problems, you can check the FAQ and get support on the <a href="%s">Forums</a>','nomnom'),'http://zeaks.org/board/threads/nomnom-faq.15/" target="_blank').'</p>';?>
 	<br><br><br>
-
 
 	<div id="nomnom_tweet_wrap">
 		<div id="nomnom_tweet">

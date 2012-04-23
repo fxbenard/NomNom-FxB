@@ -4,7 +4,7 @@ Theme URI: http://zeaks.org/nomnom-twenty-eleven-child-theme/
 Author: Scott Dixon
 Author URI: http://zeaks.org
 Description: A Twenty Eleven child theme with 10 color schemes, 9 layouts, a variety of shortcodes, custom widgets and more. Visit http://zeaks.org for any issues or questions. 
-Version: 1.7
+Version: 1.8
 License: GNU General Public License
 Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options
 Template: twentyeleven
@@ -15,27 +15,22 @@ Template: twentyeleven
 h1,h1.entry-title,h2,h3,h4,h5,h6 {
 	font-weight: normal;
 	text-decoration: none;
-	text-shadow: 1px 4px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
 }
 h1.entry-title  a {
 	font-weight:normal;
 	font-size:24px;
-	text-shadow: 1px 4px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
 }
 h3.widget-title {
 	font-size:14px;
-	text-shadow: 1px 4px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
 }
 .entry-title {
 	font-weight:normal;
 	font-size:24px;
-	text-shadow: 1px 4px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
 }
 #site-title a {
 	font-size: 28px;
 	font-weight: normal;
 	color:#272727;
-	text-shadow: 1px 4px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
 	text-decoration: none;
 }
 /*	Sidebar for single posts
@@ -84,6 +79,7 @@ h3.widget-title {
 	display:inline;
 	overflow: hidden;
 }
+
 /*	~ Begin of Custom Layouts ~
 ----------------------------------*/
 
@@ -98,12 +94,13 @@ h3.widget-title {
 	/*border-bottom: 1px solid #ddd;*/
 	margin-bottom: 1.625em;
 }
-.wide-column #secondary { display: none;}
+.wide-column #secondary , .wide-column #extra-sidebar{ 
+	display: none;
+}
 .wide-column #branding img, #branding img {
 	height: auto;
 	margin-bottom: -8px;
 }
-.wide-column #extra-sidebar { display:none; }
 /* Narrow width - Left sidebar 
 ---------------------------------*/
 .narrow-sidebar-left #page { max-width: 875px;} /* This little bit controls the width */
@@ -213,6 +210,52 @@ h3.widget-title {
 	margin-right: 0;
 	width: 18.8%;
 }
+/* less padding - right sidebar layout */
+.less-right #branding hgroup {
+    margin: 0 4.6%;
+}
+.less-right #branding #searchform {
+    right: 4.6%;
+}
+.less-right #access div {
+    margin: 0 4.6%;
+}
+
+.less-right #content {
+    margin: 0 34% 0 4.6%;
+    width: 61.4%;
+}
+.less-right #secondary,
+.less-right #extra-sidebar {
+    margin-right: 4.6%;
+    width: 21.8%;
+}
+/* less padding - left sidebar layout */
+.less-left #branding hgroup {
+    margin: 0 4.6%;
+}
+.less-left #branding #searchform {
+    right: 4.6%;
+}
+.less-left #access div {
+    margin: 0 4.6%;
+}
+.less-left  #primary {
+	float: right;
+	margin: 0 0 0 -26.4%;
+	width: 100%;
+}
+.less-left  #content {
+    margin: 0 4.6% 0 34%;
+    width: 61.4%;
+}
+.less-left #secondary,
+.less-left  #extra-sidebar{
+    margin-left: 4.6%;
+	margin-right: 0;
+	float: left;
+    width: 21.8%;
+}
 /* Various .extra-sidebar layout fixes
 --------------------------------------- */
 
@@ -249,7 +292,7 @@ h3.widget-title {
 .custom-layouts.singular footer.entry-meta,
 .custom-layouts.singular #comments-title {
 	margin: 0 auto;
-	width: 88.9%;
+	width: 68.9%;
 }
 .custom-layouts.singular .entry-meta .edit-link a {
 	position: absolute;
@@ -341,7 +384,7 @@ h3.widget-title {
 .page-template-sidebar-page-php #respond,
 .singular #respond,
 .single #respond {
-	width: 62.9%;
+	width: 68.9%;
 }
 /* comment fix for single pages and attachment pages */
 #sidebar-page-custom #respond, .single-post #respond {width: auto;}
@@ -368,28 +411,89 @@ h3.widget-title {
 	border-bottom: 5px solid #F5D800;
 	padding-bottom: 2px !important;
 }
+/* Minimal Style comments optional */
+.tidy-comments  .commentlist > li.comment {
+    background: none repeat scroll 0 0 transparent;
+    border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid #DDDDDD;
+    border-radius:0 0 0 0;
+    margin: 0 0 1.625em;
+    padding-right: 1.625em;
+    position: relative;
+}
+.tidy-comments  .commentlist .children > li.bypostauthor,
+.tidy-comments  .commentlist > li.bypostauthor {
+    background: transparent;
+}
+.tidy-comments  #respond {
+    background: transparent !important;
+    border:none;
+    border-radius: 0 0 0 0;
+    margin: 0 auto 1.625em;
+    padding: 0;
+}
+.tidy-comments  #respond input[type="text"],
+.tidy-comments  #respond textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #EEEEEE;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    padding: 5px;
+}
+.tidy-comments  #respond .comment-form-author label,
+.tidy-comments  #respond .comment-form-email label,
+.tidy-comments  #respond .comment-form-url label,
+.tidy-comments  #respond .comment-form-comment label {
+    background: none repeat scroll 0 0 transparent;
+    box-shadow: none;
+    color: #555555;
+    left: 0;
+    padding: 0 10px;
+    top: 35px;
+    z-index: 1;
+}
+.tidy-comments  #respond p {
+    margin: 0;
+}
+.tidy-comments  #respond input#submit {
+    background: none repeat scroll 0 0 #222222;
+    border: medium none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #EEEEEE;
+    font-size: 15px;
+	margin: 10px 45px 20px 0;
+    padding: 5px 22px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+.tidy-comments  .commentlist .avatar {
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+	height: 40px;
+	width: 40px;
+}
+.tidy-comments  a.comment-reply-link {
+    border-radius: 0 0 0 0;
+}
+.tidy-comments  .page-template-sidebar-page-php .commentlist > li.comment .comment-meta,
+.tidy-comments  .page-template-sidebar-page-php .commentlist > li.comment .comment-content,
+.tidy-comments  .singular .commentlist > li.comment .comment-meta,
+.tidy-comments  .singular .commentlist > li.comment .comment-content,
+.tidy-comments  .single .commentlist > li.comment .comment-meta,
+.tidy-comments  .single .commentlist > li.comment .comment-content {
+    margin-right: 40px;
+}
+.tidy-comments .commentlist > li:before {
+    content: "";
+}
+.tidy-comments .commentlist > li.bypostauthor:before {
+    content: "";
+}
+.tidy-comments #respond .comment-form-comment label  {display: none;}
 /* END OF CUSTOM LAYOUTS
 --------------------------*/
-
-/* Rounded corners in subnav  http://designerfied.com
--------------------------------------------------------*/
-#access ul ul, #access2 ul ul {
-	background: #f9f9f9;
-	-moz-border-radius-bottomleft: .5em;
-	-moz-border-radius-bottomright: .5em;
-	-webkit-border-bottom-left-radius: .5em;
-	-webkit-border-bottom-right-radius: .5em;
-	border-bottom-left-radius: .5em;
-	border-bottom-right-radius: .5em;
-	display: none;
-	float: left;
-	margin: 0;
-	padding: 0 0 8px 0;
-	top: 3.333em;
-	left: 0;
-	width: auto;
-	z-index: 99999;
-}
 
 /* add Wordpress logo to credits */
 #site-generator span.wpcredits {
@@ -580,102 +684,14 @@ font-weight: bold;
 }
 .wp-pagenavi a, .wp-pagenavi span.current, .wp-pagenavi span.pages {
 	border:1px solid #888;
-	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
-	background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	*text-shadow: 0 1px 0 #fff;
+
 }
 .wp-pagenavi a:hover, .wp-pagenavi span.current {
 	border-color: #686868;
 	color:#333;
-	-webkit-box-shadow: 0 1px 1px #666;
-	-moz-box-shadow: 0 1px 1px #666;
-	box-shadow: 0 1px 1px #666;
-}
-/* Set default next/previous default style */
-#content nav a {
-	background: none repeat scroll 0 0 #EEEEEE;
-	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari*/
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
-	background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
-	border-radius: 3px 3px 3px 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	text-shadow: 0 1px 0 #fff;
-	font-size: 12px;
-	font-weight: 300;
-	line-height: 1.5em;
-	margin-right: 5px;
-	padding: 5px 15px;
-	text-decoration: none;
-	border: 1px solid #ddd;
-}
-#content nav a:hover {
-	background: none repeat scroll 0 0 #EEEEEE;
-	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari*/
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
-	background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
-	border-radius: 3px 3px 3px 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	text-shadow: 0 1px 0 #fff;
-	color: #666666;
-	font-size: 12px;
-	font-weight: 300;
-	line-height: 1.5em;
-	margin-right: 5px;
-	padding: 5px 15px;
-	text-decoration: none;
-	border: 1px solid #ddd;
-	border-color: #686868;
-	color:#333;
-	-webkit-box-shadow: 0 1px 1px #666;
-	-moz-box-shadow: 0 1px 1px #666;
-	box-shadow: 0 1px 1px #666;
+
 }
 
-/* Special css3 effects
---------------------------*/
-#main:hover a , a:hover, input:hover, input:focus, textarea:hover, textarea:focus, a:hover img {
-	-webkit-transition:all 0.2s ease-in-out; /* Safari and Chrome */
-	-moz-transition:all 0.2s ease-in-out; /* Firefox 4 */
-	-o-transition:all 0.2s ease-in-out; /* Opera */
-}
-#page {
-	box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0 5px 16px rgba(0, 0, 0, 0.3);
-	-webkit-box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
-	/*-moz-border-radius: .5em;
-	-moz-border-radius: .5em;
-	-webkit-border-radius: .5em;
-	-webkit-border-radius: .5em;
-	border-radius: .5em;
-	border-radius: .5em; round-corners uncomment to use*/
-}
-#site-generator {
-	/*-moz-border-radius-bottomleft: .5em;
-	-moz-border-radius-bottomright: .5em;
-	-webkit-border-bottom-left-radius: .5em;
-	-webkit-border-bottom-right-radius: .5em;
-	border-bottom-left-radius: .5em;
-	border-bottom-right-radius: .5em; round-corners uncomment to use */
-}
 /* Menu Layout for mobile */
 @media handheld, only screen and (max-width: 767px) {	
 	
@@ -827,20 +843,7 @@ body { padding: 0}
 	margin: 10px 0 10px 12px;
 	float: right;
 }
-/* Social media widget area */
-header#branding .widget, .social-sidebar {
-    float: right;
-    margin-bottom: -10px;
 
-    position: relative;
-    right: 3.6%;
-    text-align: right;
-    top: -52px;
-    width: 100%;
-
-}
-.social-sidebar img, header#branding .widget img{ width:32px; padding-right: 3px; }
-#branding, #main{padding-bottom: 0;}
 /* Fix for vertical stacking images on load */
 #nomnom-header{
 	clear:both;
@@ -861,5 +864,8 @@ header#branding .widget, .social-sidebar {
 }
 .adsense-top-content { text-align: center;}
 .adsense-bottom-content { text-align: center;}
+
+/* fix for page nav in chrome */
+#nav-single {width: 130px;}
 /* THE END :)~
 ----------------*/

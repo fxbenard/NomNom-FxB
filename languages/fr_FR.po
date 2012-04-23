@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NomNom\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-23 10:40+0100\n"
-"PO-Revision-Date: 2012-04-23 10:40+0100\n"
+"POT-Creation-Date: 2012-04-23 22:45+0100\n"
+"PO-Revision-Date: 2012-04-23 22:45+0100\n"
 "Last-Translator: FxB <fx@fxbenard.com>\n"
 "Language-Team: FxB <fx@fxbenard.com>\n"
 "MIME-Version: 1.0\n"
@@ -52,67 +52,67 @@ msgstr "Toutes nos excuses, mais votre requête pour cette archive n&rsquo;a don
 msgid "Category Archives: %s"
 msgstr "Archives pour la catégorier&nbsp;: %s"
 
-#: comments.php:19
+#: comments.php:20
 msgid "This post is password protected. Enter the password to view any comments."
 msgstr "Cet article est protégé par un mot de passe. Veuillez le saisir pour pouvoir lire les commentaires."
 
-#: comments.php:42
-#: comments.php:62
+#: comments.php:43
+#: comments.php:63
 msgid "Comment navigation"
 msgstr "Navigation des commentaires"
 
-#: comments.php:43
-#: comments.php:63
+#: comments.php:44
+#: comments.php:64
 msgid "&larr; Older Comments"
 msgstr "&larr; Commentaires plus anciens"
 
-#: comments.php:44
-#: comments.php:64
+#: comments.php:45
+#: comments.php:65
 msgid "Newer Comments &rarr;"
 msgstr "Commentaires plus récents &rarr;"
 
-#: comments.php:74
+#: comments.php:75
 msgid "Comments are closed."
 msgstr "Les commentaires sont fermés."
 
-#: content-single.php:31
+#: content-single.php:32
 #: content.php:56
 msgid "Pages:"
 msgstr "Pages&nbsp;:"
 
-#: content-single.php:37
-#: content-single.php:40
+#: content-single.php:39
+#: content-single.php:42
 #: content.php:65
-#: content.php:75
+#: content.php:78
 msgid ", "
 msgstr ", "
 
-#: content-single.php:42
+#: content-single.php:44
 #, php-format
 msgid "This entry was posted in %1$s and tagged %2$s by <a href=\"%6$s\">%5$s</a>. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr "Ce contenu a été publié dans %1$s par <a href=\"%6$s\">%5$s</a>, et marqué avec %2$s. Mettez-le en favori avec son <a href=\"%3$s\" title=\"Permalien vers %4$s\" rel=\"bookmark\">permalien</a>."
 
-#: content-single.php:44
+#: content-single.php:46
 #, php-format
 msgid "This entry was posted in %1$s by <a href=\"%6$s\">%5$s</a>. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr "Ce contenu a été publié dans %1$s par <a href=\"%6$s\">%5$s</a>. Mettez-le en favori avec son <a href=\"%3$s\" title=\"Permalien vers %4$s\" rel=\"bookmark\">permalien</a>."
 
-#: content-single.php:46
+#: content-single.php:48
 #, php-format
 msgid "This entry was posted by <a href=\"%6$s\">%5$s</a>. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr "Ce contenu a été publié par <a href=\"%6$s\">%5$s</a>. Mettez-le en favori avec son <a href=\"%3$s\" title=\"Permalien vers %4$s\" rel=\"bookmark\">permalien</a>."
 
-#: content-single.php:59
-#: content.php:96
+#: content-single.php:62
+#: content.php:102
 msgid "Edit"
 msgstr "Modifier"
 
-#: content-single.php:67
+#: content-single.php:70
 #, php-format
 msgid "About %s"
 msgstr "A propos %s"
 
-#: content-single.php:71
+#: content-single.php:74
 #, php-format
 msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Afficher tous les articles de %s <span class=\"meta-nav\">&rarr;</span>"
@@ -148,27 +148,27 @@ msgstr "%"
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Lire la suite <span class=\"meta-nav\">&rarr;</span>"
 
-#: content.php:69
+#: content.php:70
 #, php-format
 msgid "<span class=\"%1$s\">Posted in</span> %2$s"
 msgstr "<span class=\"%1$s\">Publié dans</span> %2$s"
 
-#: content.php:81
+#: content.php:84
 #, php-format
 msgid "<span class=\"%1$s\">Tagged</span> %2$s"
 msgstr "<span class=\"%1$s\">Mots-clefs</span> %2$s"
 
-#: content.php:92
+#: content.php:97
 #: showcase.php:197
 msgid "Leave a reply"
 msgstr "Laisser une réponse"
 
-#: content.php:92
+#: content.php:97
 #: showcase.php:197
 msgid "<b>1</b> Reply"
 msgstr "<b>1</b> réponse"
 
-#: content.php:92
+#: content.php:97
 #: showcase.php:197
 msgid "<b>%</b> Replies"
 msgstr "<b>%</b> réponses"
@@ -199,7 +199,6 @@ msgid "Footer Menu"
 msgstr "Menu du pied de page"
 
 #: functions.php:95
-#: single.php:17
 msgid "Post navigation"
 msgstr "Navigation des articles"
 
@@ -232,21 +231,21 @@ msgstr "La barre latérale de la mise en page en trois colonnes uniquement"
 msgid "Page %s"
 msgstr "Page %s"
 
-#: header.php:95
+#: header.php:98
 msgid "Secondary menu"
 msgstr "Menu secondaire"
 
-#: header.php:97
-#: header.php:155
+#: header.php:100
+#: header.php:158
 msgid "Skip to primary content"
 msgstr "Aller au contenu principal"
 
-#: header.php:98
-#: header.php:156
+#: header.php:101
+#: header.php:159
 msgid "Skip to secondary content"
 msgstr "Aller au contenu secondaire"
 
-#: header.php:153
+#: header.php:156
 msgid "Main menu"
 msgstr "Menu principal"
 
@@ -288,7 +287,7 @@ msgid "Twenty Eleven - Blog Author Info"
 msgstr "Twenty Eleven - Info Auteur du Blog"
 
 #: includes/blog-author.php:51
-#: includes/twitter.php:38
+#: includes/twitter.php:40
 msgid "Title:"
 msgstr "Titre&nbsp;:"
 
@@ -381,7 +380,6 @@ msgid "Latest"
 msgstr "Dernière"
 
 #: includes/flickr.php:70
-#: includes/views/slider_options.php:74
 msgid "Random"
 msgstr "Au hasard"
 
@@ -425,102 +423,115 @@ msgstr "3 colonnes, 2 barres latérales à gauche"
 msgid "3 Column, 2 Right Sidebars"
 msgstr "3 colonnes, 2 barres latérales à droite"
 
-#: includes/theme-options.php:108
+#: includes/theme-options.php:72
+msgid "Right Sidebar - Less Padding"
+msgstr ""
+
+#: includes/theme-options.php:78
+msgid "Left Sidebar - Less Padding"
+msgstr ""
+
+#: includes/theme-options.php:131
 msgid "Orange"
 msgstr "Orange"
 
-#: includes/theme-options.php:115
+#: includes/theme-options.php:138
 msgid "Sandstone"
 msgstr "Grès"
 
-#: includes/theme-options.php:122
+#: includes/theme-options.php:145
 msgid "pink"
 msgstr "Rose"
 
-#: includes/theme-options.php:129
+#: includes/theme-options.php:152
 msgid "Mauve"
 msgstr "Mauve"
 
-#: includes/theme-options.php:136
+#: includes/theme-options.php:159
 msgid "Lavender"
 msgstr "Lavande"
 
-#: includes/theme-options.php:143
+#: includes/theme-options.php:166
 msgid "Light Blue"
 msgstr "Bleu ciel clair"
 
-#: includes/theme-options.php:150
+#: includes/theme-options.php:173
 msgid "Blue"
 msgstr "Bleu"
 
-#: includes/theme-options.php:157
+#: includes/theme-options.php:180
 msgid "Charcoal"
 msgstr "Fusain"
 
-#: includes/theme-options.php:226
+#: includes/theme-options.php:249
 msgid " - Theme Options"
 msgstr " - Options du thème"
 
-#: includes/theme-options.php:231
+#: includes/theme-options.php:254
 #: includes/views/general_info_options.php:4
 msgid "Theme Info"
 msgstr "Info du thème"
 
-#: includes/theme-options.php:232
+#: includes/theme-options.php:255
 msgid "General Options"
 msgstr "Options Générales"
 
-#: includes/theme-options.php:233
+#: includes/theme-options.php:256
 msgid "Font & Color Options"
 msgstr "Police & Couleurs"
 
-#: includes/theme-options.php:234
-#: includes/views/slider_options.php:4
+#: includes/theme-options.php:257
 msgid "Slider Options"
 msgstr "Options du Diaporama"
 
-#: includes/theme-options.php:235
+#: includes/theme-options.php:258
 #: includes/views/customcss_options.php:5
 msgid "Custom CSS"
 msgstr "CSS personnalisé"
 
-#: includes/theme-options.php:236
+#: includes/theme-options.php:259
 msgid "Help & Tips"
 msgstr "Aide & Astuces"
 
-#: includes/theme-options.php:237
+#: includes/theme-options.php:260
 msgid "Site Preview"
 msgstr "Aperçu du Site"
 
-#: includes/theme-options.php:635
+#: includes/theme-options.php:684
+#, fuzzy
+msgid "Nomnom Options updated..."
+msgstr "Les réglages du site ont été mis à jour."
+
+#: includes/theme-options.php:703
+#, fuzzy
+msgid "Custom CSS updated..."
+msgstr "Champ personnalisé mis à jour."
+
+#: includes/theme-options.php:716
 msgid "Nomnom slider updated..."
 msgstr "Diaporama NomNom mis à jour..."
 
-#: includes/theme-options.php:690
-msgid "Select font to be used for titles."
-msgstr "Selectionner la police pour les titres."
-
-#: includes/twitter.php:8
+#: includes/twitter.php:9
 msgid "Add your Twitter feed to your sidebar with this widget."
 msgstr ""
 
-#: includes/twitter.php:9
+#: includes/twitter.php:11
 msgid "Twenty Eleven - Twitter Stream"
 msgstr "Twenty Eleven - Flux Twitter"
 
-#: includes/twitter.php:20
+#: includes/twitter.php:22
 msgid "Follow"
 msgstr "Suivre"
 
-#: includes/twitter.php:20
+#: includes/twitter.php:22
 msgid "on Twitter"
 msgstr "sur Twitter"
 
-#: includes/twitter.php:42
+#: includes/twitter.php:44
 msgid "Username:"
 msgstr "Identifiant&nbsp;: "
 
-#: includes/twitter.php:46
+#: includes/twitter.php:48
 msgid "Limit:"
 msgstr "Limite&nbsp;:"
 
@@ -624,24 +635,24 @@ msgstr "Merci d'utiliser NomNom un thème enfant de Twenty Eleven."
 msgid "Click here to go to <a href=\"%1$s\"> Theme Options </a> page and select from 10 color schemes and 9 layouts <br> Visit the <a href=\"%2$s\">Theme Homepage</a>"
 msgstr "Cliquez ici pour aller sur la page d'<a href=\"%1$s\">options du thème </a> et sélectionnez parmi une combinaison de 10 couleurs et 9 mises en page différentes<br> Visitez la <a href=\"%2$s\">page officielle</a> du thème."
 
-#: includes/views/general_info_options.php:17
+#: includes/views/general_info_options.php:16
 #, php-format
 msgid "If your having problems, you can check the FAQ and get support on the <a href=\"%s\">Forums</a>"
 msgstr "Si vous avez des problèmes, vous pouvez consulter la FAQ et obtenir de l'aide sur les <a href=\"%s\"> Forums </a>"
 
-#: includes/views/general_info_options.php:23
+#: includes/views/general_info_options.php:21
 msgid "Follow me on Twitter and Share on Facebook!"
 msgstr "Suivez moi sur Twitter et partager sur Facebook !"
 
-#: includes/views/general_info_options.php:48
+#: includes/views/general_info_options.php:46
 msgid "Latest Posts From"
 msgstr "Les dernières nouvelles de"
 
-#: includes/views/general_info_options.php:69
+#: includes/views/general_info_options.php:67
 msgid "Support NomNom"
 msgstr "Aider NomNom"
 
-#: includes/views/general_info_options.php:70
+#: includes/views/general_info_options.php:68
 msgid "If you enjoy this theme and want to support my time and effort, you can help me out by donating. Any amount big or small, all donations are appreciated."
 msgstr "Si vous aimez ce thème et que vous voulez soutenir mon temps et mes efforts, vous pouvez m'aider en faisant un don. Tout montant grand ou petit, tous les dons sont appréciés."
 
@@ -684,106 +695,206 @@ msgstr ""
 msgid "Update Header Size"
 msgstr "Taille de l'icône:"
 
-#: includes/views/general_options.php:77
+#: includes/views/general_options.php:60
+#, fuzzy
+msgid "Post Options"
+msgstr "Options du type d'article"
+
+#: includes/views/general_options.php:78
 msgid "Excerpts with Thumbnails or Full"
 msgstr ""
 
-#: includes/views/general_options.php:80
+#: includes/views/general_options.php:81
 msgid "Excerpts"
 msgstr "Extraits"
 
-#: includes/views/general_options.php:81
+#: includes/views/general_options.php:82
 msgid "Full Posts"
 msgstr "Articles"
 
-#: includes/views/general_options.php:82
+#: includes/views/general_options.php:83
 msgid "Excerpts will display post thumbnail if a featured image is selected for the post."
 msgstr ""
 
 #: includes/views/general_options.php:89
 #, fuzzy
+msgid "Post date on/off"
+msgstr "<a href=\"%1$s\">Message</a> le <a href=\"%2$s\">%3$s</a> par <a href=\"%4$s\">%5$s</a>"
+
+#: includes/views/general_options.php:92
+#: includes/views/general_options.php:103
+#: includes/views/general_options.php:115
+#: includes/views/general_options.php:127
+#: includes/views/general_options.php:139
+#: includes/views/general_options.php:181
+#: includes/views/general_options.php:205
+#: includes/views/general_options.php:217
+#: includes/views/general_options.php:230
+#: includes/views/general_options.php:278
+msgid "On"
+msgstr "Marche"
+
+#: includes/views/general_options.php:93
+#: includes/views/general_options.php:104
+#: includes/views/general_options.php:116
+#: includes/views/general_options.php:128
+#: includes/views/general_options.php:140
+#: includes/views/general_options.php:182
+#: includes/views/general_options.php:206
+#: includes/views/general_options.php:218
+#: includes/views/general_options.php:231
+#: includes/views/general_options.php:279
+msgid "Off"
+msgstr "Arrêt"
+
+#: includes/views/general_options.php:94
+msgid "This will turn the Post Date meta information on or off on the index."
+msgstr ""
+
+#: includes/views/general_options.php:100
+#, fuzzy
+msgid "Post Category on/off"
+msgstr "<a href=\"%1$s\">Message</a> le <a href=\"%2$s\">%3$s</a> par <a href=\"%4$s\">%5$s</a>"
+
+#: includes/views/general_options.php:105
+msgid "This will turn Post Category meta information on/off on the index."
+msgstr ""
+
+#: includes/views/general_options.php:112
+#, fuzzy
+msgid "Post Tags on/off"
+msgstr "Mots-clefs utilisés dans cet article&nbsp;:"
+
+#: includes/views/general_options.php:117
+msgid "This will turn the Post Tags on or off on the index."
+msgstr ""
+
+#: includes/views/general_options.php:124
+msgid "Post Meta on All Single Post Pages"
+msgstr ""
+
+#: includes/views/general_options.php:129
+msgid "This will turn the Post meta information on or off for single post pages."
+msgstr ""
+
+#: includes/views/general_options.php:136
+#, fuzzy
+msgid "Leave Reply on/off"
+msgstr "<span class=\"leave-reply\">Répondre</span>"
+
+#: includes/views/general_options.php:141
+msgid "This will turn the Leave a Reply link on or off."
+msgstr ""
+
+#: includes/views/general_options.php:146
+#, fuzzy
+msgid "Update Post Options"
+msgstr "Options du type d'article"
+
+#: includes/views/general_options.php:159
+#, fuzzy
+msgid "Site Options"
+msgstr "Les réglages du site ont été mis à jour."
+
+#: includes/views/general_options.php:178
+#, fuzzy
 msgid "Main Menu Below Header"
 msgstr "Menu du Haut (au-dessus de l'en-tête)"
 
-#: includes/views/general_options.php:92
-#: includes/views/general_options.php:104
-#: includes/views/general_options.php:128
-#: includes/views/general_options.php:140
-#: includes/views/general_options.php:152
-#: includes/views/slider_options.php:34
-msgid "Yes"
-msgstr "Oui"
-
-#: includes/views/general_options.php:93
-#: includes/views/general_options.php:105
-#: includes/views/general_options.php:129
-#: includes/views/general_options.php:141
-#: includes/views/general_options.php:153
-#: includes/views/slider_options.php:35
-msgid "No"
-msgstr "Non"
-
-#: includes/views/general_options.php:94
+#: includes/views/general_options.php:183
 msgid "The menu option controls the main default Twenty Eleven menu in case you just want to use the top one."
 msgstr ""
 
-#: includes/views/general_options.php:101
+#: includes/views/general_options.php:190
 #, fuzzy
 msgid "Comment Bubble on Index"
 msgstr "Le premier commentaire sur tout nouveau site."
 
-#: includes/views/general_options.php:106
+#: includes/views/general_options.php:193
+#: includes/views/general_options.php:243
+#: includes/views/general_options.php:255
+#: includes/views/general_options.php:266
+msgid "Yes"
+msgstr "Oui"
+
+#: includes/views/general_options.php:194
+#: includes/views/general_options.php:244
+#: includes/views/general_options.php:256
+#: includes/views/general_options.php:267
+msgid "No"
+msgstr "Non"
+
+#: includes/views/general_options.php:195
 msgid "Choose to display the comment bubble on the index or hide it."
 msgstr ""
 
-#: includes/views/general_options.php:113
+#: includes/views/general_options.php:202
 #, fuzzy
-msgid "Comments on/off Site Wide"
+msgid "Post Comments Site Wide on/off"
 msgstr "<a href=\"%s\">Activer/désactiver les commentaires</a>"
 
-#: includes/views/general_options.php:116
-msgid "On"
-msgstr "Marche"
-
-#: includes/views/general_options.php:117
-msgid "Off"
-msgstr "Arrêt"
-
-#: includes/views/general_options.php:118
-msgid "This will turn the comments, comment form and \"leave a comment\" link on/off for all posts and pages."
+#: includes/views/general_options.php:207
+msgid "This will turn the comments, comment form and leave a Reply link on/off for all posts."
 msgstr ""
 
-#: includes/views/general_options.php:125
+#: includes/views/general_options.php:214
+#, fuzzy
+msgid "Page Comments Site Wide on/off"
+msgstr "<a href=\"%s\">Activer/désactiver les commentaires</a>"
+
+#: includes/views/general_options.php:219
+msgid "This will turn the comments and comment form on/off for all pages."
+msgstr ""
+
+#: includes/views/general_options.php:227
+#, fuzzy
+msgid "Minimal Style Comments on/off"
+msgstr "<a href=\"%s\">Activer/désactiver les commentaires</a>"
+
+#: includes/views/general_options.php:232
+msgid "This displays a more minimal style comment system than the default."
+msgstr ""
+
+#: includes/views/general_options.php:240
 #, fuzzy
 msgid "Display Related Posts"
 msgstr "Afficher la liste des entrées complémentaires automatiquement&nbsp;?"
 
-#: includes/views/general_options.php:130
+#: includes/views/general_options.php:245
 msgid "Related posts are displayed under each post if selected."
 msgstr ""
 
-#: includes/views/general_options.php:137
+#: includes/views/general_options.php:252
 #, fuzzy
 msgid "Author Post Avatar"
 msgstr "Recadrage de l'avatar du groupe"
 
-#: includes/views/general_options.php:142
+#: includes/views/general_options.php:257
 msgid "Author avatars will be displayed next to each post title if turned on."
 msgstr ""
 
-#: includes/views/general_options.php:149
+#: includes/views/general_options.php:263
 #, fuzzy
 msgid "Searchform in Header"
 msgstr "Retirer l&rsquo;image d&rsquo;en-tête"
 
-#: includes/views/general_options.php:154
+#: includes/views/general_options.php:268
 msgid "This will turn the searchform in the header on/off."
 msgstr ""
 
-#: includes/views/general_options.php:158
+#: includes/views/general_options.php:275
 #, fuzzy
-msgid "Update All Options"
-msgstr "Mettre à jour les options &raquo;"
+msgid "CSS3 Effects on/off"
+msgstr "Activer les caractères de mise en page."
+
+#: includes/views/general_options.php:280
+msgid "This will turn all NomNom CSS3 off. (text shadow, box shadow, border-radius)"
+msgstr ""
+
+#: includes/views/general_options.php:285
+#, fuzzy
+msgid "Update Site Options"
+msgstr "Les réglages du site ont été mis à jour."
 
 #: includes/views/help_options.php:5
 msgid "Additional Info"
@@ -970,6 +1081,9 @@ msgstr ""
 #: includes/views/slider_options.php:114
 msgid "Update Slider Options"
 msgstr "Mettre à jour les options du Diaporama"
+
+#~ msgid "Select font to be used for titles."
+#~ msgstr "Selectionner la police pour les titres."
 
 #~ msgid "Click here to go to"
 #~ msgstr "Cliquez ici pour aller"

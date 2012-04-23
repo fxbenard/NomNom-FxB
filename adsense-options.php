@@ -15,6 +15,7 @@ add_filter( 'the_content', 'adsense_bottom_content_filter' );
 // 250x250 Adsense Code shown to left inside post content
 add_filter( 'the_content', 'square_adsense_content' );
 	function square_adsense_content($content) {
+		if ( is_single() || is_page() ) {
 		global $post;
         $original = $content;
 		if ( is_single() || is_page() ) {
@@ -25,6 +26,7 @@ add_filter( 'the_content', 'square_adsense_content' );
 </div>		
 		';
 	$content .= "";
+}
 }
 	$content .= $original;
 return $content;
