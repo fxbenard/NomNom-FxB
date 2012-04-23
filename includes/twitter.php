@@ -4,6 +4,7 @@
 /*---------------------------------------------------------------------------------*/
 class twentyeleven_Twitter extends WP_Widget {
 
+   
    function twentyeleven_Twitter() {
       $widget_ops = array('description' => __('Add your Twitter feed to your sidebar with this widget.','nomnom'));
 
