@@ -5,7 +5,7 @@
 class twentyeleven_BlogAuthorInfo extends WP_Widget {
 
    function twentyeleven_BlogAuthorInfo() {
-	   $widget_ops = array('description' => 'This is a Blog Author Info widget.' );
+	   $widget_ops = array('description' => __('This is a Blog Author Info widget.','nomnom') );
 	   parent::WP_Widget(false, __('Twenty Eleven - Blog Author Info', 'nomnom'),$widget_ops);      
    }
 

@@ -17,7 +17,7 @@
 	<textarea name="nomnom_custom_css" id="nomnom_custom_css" dir="ltr" cols="150" rows="10"><?php echo get_option('nomnom_custom_css');?></textarea>
 	<p class="submit">
     	<!-- <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" /> -->
-		<input type="button" class="button-primary" name="Submit" id="nomnom_update_css_options" value="Save Changes" />
+		<input type="button" class="button-primary" name="Submit" id="nomnom_update_css_options" value="<?php _e('Save Changes','nomnom');?>" />
    	</p>
 		</form>
 			</tr>
@@ -40,10 +40,10 @@
 						<blockquote>				
 <table border="0" bordercolor="" width="100%" bgcolor="">
 	<tr>
-<p> You can add your own custom CSS style here, it will not be overwritten during an upgrade of NomNom. Any CSS you add here will override NomNoms default style. <br><br><b>Example:</b><code>.entry-title a { border: 1px solid red; color: green;}</code><br><br>Check this page for <a href="http://zeaks.org/board/threads/twenty-eleven-css-snippets.20/" target="blank">some cool CSS snippets</a></p>
+ <?php echo '<p>'.sprintf(__('You can add your own custom CSS style here, it will not be overwritten during an upgrade of NomNom. Any CSS you add here will override NomNoms default style. <br><br><b>Example:</b><code>.entry-title a { border: 1px solid red; color: green;}</code><br><br>Check this page for <a href="%1$s">some cool CSS snippets</a>','nomnom'),'http://zeaks.org/board/threads/twenty-eleven-css-snippets.20/" target="blank').'</p>';?>
 
 <br>
-This will not check the validness of your code, so make sure to use compliant CSS.
+<?php _e('This will not check the validness of your code, so make sure to use compliant CSS.','nomnom');?>
 			</tr>
 		</table>						
 				</blockquote>
