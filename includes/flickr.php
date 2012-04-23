@@ -5,7 +5,7 @@
 class twentyeleven_flickr extends WP_Widget {
 
     function twentyeleven_flickr() {
-        $widget_ops = array('description' => 'This Flickr widget populates photos from a Flickr ID.' );
+        $widget_ops = array('description' => __('This Flickr widget populates photos from a Flickr ID.','nomnom' );
 
         parent::WP_Widget(false, __('Twenty Eleven - Flickr', 'nomnom'),$widget_ops);      
     }
