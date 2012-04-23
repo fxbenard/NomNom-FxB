@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NomNom\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-22 11:12+0100\n"
-"PO-Revision-Date: 2012-04-22 11:22+0100\n"
+"POT-Creation-Date: 2012-04-23 10:40+0100\n"
+"PO-Revision-Date: 2012-04-23 10:40+0100\n"
 "Last-Translator: FxB <fx@fxbenard.com>\n"
 "Language-Team: FxB <fx@fxbenard.com>\n"
 "MIME-Version: 1.0\n"
@@ -340,6 +340,10 @@ msgstr "Accueil uniquement"
 msgid "Single only"
 msgstr "Unique uniquement"
 
+#: includes/flickr.php:8
+msgid "This Flickr widget populates photos from a Flickr ID."
+msgstr ""
+
 #: includes/flickr.php:10
 msgid "Twenty Eleven - Flickr"
 msgstr "Twenty Eleven - Flickr"
@@ -496,6 +500,10 @@ msgstr "Diaporama NomNom mis à jour..."
 msgid "Select font to be used for titles."
 msgstr "Selectionner la police pour les titres."
 
+#: includes/twitter.php:8
+msgid "Add your Twitter feed to your sidebar with this widget."
+msgstr ""
+
 #: includes/twitter.php:9
 msgid "Twenty Eleven - Twitter Stream"
 msgstr "Twenty Eleven - Flux Twitter"
@@ -515,6 +523,11 @@ msgstr "Identifiant&nbsp;: "
 #: includes/twitter.php:46
 msgid "Limit:"
 msgstr "Limite&nbsp;:"
+
+#: includes/views/color_options.php:6
+#, fuzzy
+msgid "You are currently using a default color scheme."
+msgstr "Vous are currently using a default color scheme."
 
 #: includes/views/color_options.php:12
 msgid "Navigation Primary Color"
@@ -585,12 +598,22 @@ msgid "Load Color Scheme Defaults"
 msgstr "Réinitialiser"
 
 #: includes/views/customcss_options.php:19
+#: includes/views/customcss_options.php:20
 msgid "Save Changes"
 msgstr "Enregistrer les modifications"
 
 #: includes/views/customcss_options.php:34
 msgid "Custom CSS Info"
 msgstr "Info du css personnalisé"
+
+#: includes/views/customcss_options.php:43
+#, fuzzy, php-format
+msgid "You can add your own custom CSS style here, it will not be overwritten during an upgrade of NomNom. Any CSS you add here will override NomNoms default style. <br><br><b>Example:</b><code>.entry-title a { border: 1px solid red; color: green;}</code><br><br>Check this page for <a href=\"%1$s\">some cool CSS snippets</a>"
+msgstr "Vous can add your own custom CSS style here, it will not be overwritten during an upgrade of NomNom. Any CSS you add here will override NomNoms default style. <br><br><b>Example:</b><code>.entry-title a { border: 1px solid red; color: green;}</code><br><br>Check this page for <a href=\"%1$s\">some cool CSS snippets</a>"
+
+#: includes/views/customcss_options.php:46
+msgid "This will not check the validness of your code, so make sure to use compliant CSS."
+msgstr ""
 
 #: includes/views/general_info_options.php:12
 msgid "Thanks for using NomNom Twenty Eleven child theme."
@@ -626,25 +649,247 @@ msgstr "Si vous aimez ce thème et que vous voulez soutenir mon temps et mes eff
 msgid "Header Options"
 msgstr "Options d'en-tête"
 
-#: includes/views/help_options.php:5
-msgid "Additional Info"
-msgstr "Info supplémentaire"
+#: includes/views/general_options.php:24
+#, fuzzy
+msgid "Choose your header size."
+msgstr "Choisissez votre méthode de paiement"
 
-#: includes/views/help_options.php:31
-msgid "Commonly used CSS Classes"
-msgstr "Communément  les classes CSS utilisées"
+#: includes/views/general_options.php:26
+msgid "Width"
+msgstr "Largeur"
 
-#: includes/views/slider_options.php:31
-msgid "Display Slider?"
-msgstr "Afficher le diaporama ?"
+#: includes/views/general_options.php:27
+msgid "Recommended 1000px"
+msgstr "Recommandé 1000px"
 
+#: includes/views/general_options.php:31
+msgid "Height"
+msgstr "Hauteur"
+
+#: includes/views/general_options.php:32
+#, fuzzy
+msgid "Default is 288px"
+msgstr "<strong>Il manque le thème par défaut.</strong>"
+
+#: includes/views/general_options.php:40
+msgid "Resize the header image here. This will also affect the slider size. It's a good idea to stick with the same header size after resizing if you plan to use the slider."
+msgstr ""
+
+#: includes/views/general_options.php:41
+msgid "You must upload a new header image after setting a size as only new images are resized, if you use an old or default header image, it will display as the size it was originally cropped to."
+msgstr ""
+
+#: includes/views/general_options.php:44
+#, fuzzy
+msgid "Update Header Size"
+msgstr "Taille de l'icône:"
+
+#: includes/views/general_options.php:77
+msgid "Excerpts with Thumbnails or Full"
+msgstr ""
+
+#: includes/views/general_options.php:80
+msgid "Excerpts"
+msgstr "Extraits"
+
+#: includes/views/general_options.php:81
+msgid "Full Posts"
+msgstr "Articles"
+
+#: includes/views/general_options.php:82
+msgid "Excerpts will display post thumbnail if a featured image is selected for the post."
+msgstr ""
+
+#: includes/views/general_options.php:89
+#, fuzzy
+msgid "Main Menu Below Header"
+msgstr "Menu du Haut (au-dessus de l'en-tête)"
+
+#: includes/views/general_options.php:92
+#: includes/views/general_options.php:104
+#: includes/views/general_options.php:128
+#: includes/views/general_options.php:140
+#: includes/views/general_options.php:152
 #: includes/views/slider_options.php:34
 msgid "Yes"
 msgstr "Oui"
 
+#: includes/views/general_options.php:93
+#: includes/views/general_options.php:105
+#: includes/views/general_options.php:129
+#: includes/views/general_options.php:141
+#: includes/views/general_options.php:153
 #: includes/views/slider_options.php:35
 msgid "No"
 msgstr "Non"
+
+#: includes/views/general_options.php:94
+msgid "The menu option controls the main default Twenty Eleven menu in case you just want to use the top one."
+msgstr ""
+
+#: includes/views/general_options.php:101
+#, fuzzy
+msgid "Comment Bubble on Index"
+msgstr "Le premier commentaire sur tout nouveau site."
+
+#: includes/views/general_options.php:106
+msgid "Choose to display the comment bubble on the index or hide it."
+msgstr ""
+
+#: includes/views/general_options.php:113
+#, fuzzy
+msgid "Comments on/off Site Wide"
+msgstr "<a href=\"%s\">Activer/désactiver les commentaires</a>"
+
+#: includes/views/general_options.php:116
+msgid "On"
+msgstr "Marche"
+
+#: includes/views/general_options.php:117
+msgid "Off"
+msgstr "Arrêt"
+
+#: includes/views/general_options.php:118
+msgid "This will turn the comments, comment form and \"leave a comment\" link on/off for all posts and pages."
+msgstr ""
+
+#: includes/views/general_options.php:125
+#, fuzzy
+msgid "Display Related Posts"
+msgstr "Afficher la liste des entrées complémentaires automatiquement&nbsp;?"
+
+#: includes/views/general_options.php:130
+msgid "Related posts are displayed under each post if selected."
+msgstr ""
+
+#: includes/views/general_options.php:137
+#, fuzzy
+msgid "Author Post Avatar"
+msgstr "Recadrage de l'avatar du groupe"
+
+#: includes/views/general_options.php:142
+msgid "Author avatars will be displayed next to each post title if turned on."
+msgstr ""
+
+#: includes/views/general_options.php:149
+#, fuzzy
+msgid "Searchform in Header"
+msgstr "Retirer l&rsquo;image d&rsquo;en-tête"
+
+#: includes/views/general_options.php:154
+msgid "This will turn the searchform in the header on/off."
+msgstr ""
+
+#: includes/views/general_options.php:158
+#, fuzzy
+msgid "Update All Options"
+msgstr "Mettre à jour les options &raquo;"
+
+#: includes/views/help_options.php:5
+msgid "Additional Info"
+msgstr "Info supplémentaire"
+
+#: includes/views/help_options.php:12
+#, php-format
+msgid "<b>Wp-PageNavi -</b> This theme is <a href=\"%1$s\">Wp-PageNavi</a> ready. Simply install the plugin and it will appear at the bottom of your page. Preset color schemes have special styles included"
+msgstr ""
+
+#: includes/views/help_options.php:15
+msgid "<b>Header Image -</b> After first install the header image will display as the default Twenty Eleven size 1000 x 288. You <b>must</b> select a header size then upload a new header for your new size to take effect. It's also a good idea to stick with your chosen header size when using the slider"
+msgstr ""
+
+#: includes/views/help_options.php:17
+#, php-format
+msgid "<b>Shortcodes -</b> Shortcodes have been removed as of version 1.5. the reason being, you're stuck with the same theme forever if you want to keep your shortcodes working. So instead, i've created a plugin which will allow you to continue using your current shortcodes even if you switch themes. Grab it here <a href=\"%1$s\">NomNom Shortcodes Plugin</a>"
+msgstr ""
+
+#: includes/views/help_options.php:19
+msgid "<b>Adsense -</b> This theme can display adsene ads within and below the content on single post view and on pages. Open adsense-options.php in the theme directory and paste your adsense code in the commented area. Recommend sizes are 468x60 for bottom adsense and 250x250 or smaller for square content adsense."
+msgstr ""
+
+#: includes/views/help_options.php:21
+#, php-format
+msgid "<b>Dark Scheme style -</b> By default the dark stylesheet gets loaded after the style.css of the child theme. This makes it difficult to edit it in a child theme. A function has been added to NomNom Thanks to <a href=\"%1$s\">http://transformationpowertools.com</a> that allows you to edit this theme. Open includes/css/dark-default.css to make changes to this color scheme."
+msgstr ""
+
+#: includes/views/help_options.php:23
+#, php-format
+msgid "<b>Image issues -</b> If your header image or featured images either on the main page or on the post editor page are not displaying the prper size please do the following. NomNom Options > General Options > select a header size. Upload a new header image after selecting the header size. Selecting a header size should also fix the issue with the large featured image on the post editor page. To fix featured images when switching from another theme, or changing featured image size I suggest installing <a href=\"%1$s\">Ajax Rebuild Thumbnails</a> and running it. This will create proper sizes for all your featured images."
+msgstr ""
+
+#: includes/views/help_options.php:35
+msgid "Commonly used CSS Classes"
+msgstr "Communément  les classes CSS utilisées"
+
+#: includes/views/help_options.php:42
+#, fuzzy
+msgid "Site title and description"
+msgstr "Description \"par dessus\" sur le titre"
+
+#: includes/views/help_options.php:43
+#, fuzzy
+msgid "Post titles"
+msgstr "ATTENTION : vous devez détruire la feuille de style customisée actuelle %s avant que l'extension puisse écrire le dossier. %sBesoin d'Aide ?%s"
+
+#: includes/views/help_options.php:44
+#, fuzzy
+msgid "Header searchform"
+msgstr "Image d'entête"
+
+#: includes/views/help_options.php:45
+msgid "NomNom Custom Layout Classes"
+msgstr ""
+
+#: includes/views/help_options.php:46
+msgid "NomNom Custom class for all layouts"
+msgstr ""
+
+#: includes/views/help_options.php:47
+#, fuzzy
+msgid "Twenty Eleven Default Layouts"
+msgstr "Twenty Eleven - Flux Twitter"
+
+#: includes/views/help_options.php:48
+msgid "NomNom Menus(default, top, bottom)"
+msgstr ""
+
+#: includes/views/help_options.php:49
+#, fuzzy
+msgid "Sidebars"
+msgstr "Aucune colonne latérale définie"
+
+#: includes/views/help_options.php:50
+#, fuzzy
+msgid "Body Classes"
+msgstr "Classes de livraison"
+
+#: includes/views/help_options.php:51
+#, fuzzy
+msgid "Posted on, Posted by, Posted in etc"
+msgstr "<span class=\"%1$s\">Publié le</span> %2$s <span class=\"meta-sep\">par</span> %3$s"
+
+#: includes/views/help_options.php:52
+#, fuzzy
+msgid "Header"
+msgstr "En-tête"
+
+#: includes/views/help_options.php:53
+#, fuzzy
+msgid "Content Layout"
+msgstr "Mise en page par défaut"
+
+#: includes/views/help_options.php:54
+msgid "Increase right sidebar width 4%"
+msgstr ""
+
+#: includes/views/help_options.php:56
+#, fuzzy
+msgid "Widget Titles"
+msgstr "ATTENTION : vous devez détruire la feuille de style customisée actuelle %s avant que l'extension puisse écrire le dossier. %sBesoin d'Aide ?%s"
+
+#: includes/views/slider_options.php:31
+msgid "Display Slider?"
+msgstr "Afficher le diaporama ?"
 
 #: includes/views/slider_options.php:40
 msgid "Number of posts to display?"

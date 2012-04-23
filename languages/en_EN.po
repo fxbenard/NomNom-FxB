@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nom Nom v.1.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-22 09:59+0100\n"
-"PO-Revision-Date: 2012-04-22 09:59+0100\n"
+"POT-Creation-Date: 2012-04-23 10:46+0100\n"
+"PO-Revision-Date: 2012-04-23 10:46+0100\n"
 "Last-Translator: FxB <fx@fxbenard.com>\n"
 "Language-Team: Scott Dixon\n"
 "MIME-Version: 1.0\n"
@@ -340,6 +340,10 @@ msgstr ""
 msgid "Single only"
 msgstr ""
 
+#: includes/flickr.php:8
+msgid "This Flickr widget populates photos from a Flickr ID."
+msgstr ""
+
 #: includes/flickr.php:10
 msgid "Twenty Eleven - Flickr"
 msgstr ""
@@ -496,6 +500,10 @@ msgstr ""
 msgid "Select font to be used for titles."
 msgstr ""
 
+#: includes/twitter.php:8
+msgid "Add your Twitter feed to your sidebar with this widget."
+msgstr ""
+
 #: includes/twitter.php:9
 msgid "Twenty Eleven - Twitter Stream"
 msgstr ""
@@ -514,6 +522,10 @@ msgstr ""
 
 #: includes/twitter.php:46
 msgid "Limit:"
+msgstr ""
+
+#: includes/views/color_options.php:6
+msgid "You are currently using a default color scheme."
 msgstr ""
 
 #: includes/views/color_options.php:12
@@ -577,11 +589,21 @@ msgid "Load Color Scheme Defaults"
 msgstr ""
 
 #: includes/views/customcss_options.php:19
+#: includes/views/customcss_options.php:20
 msgid "Save Changes"
 msgstr ""
 
 #: includes/views/customcss_options.php:34
 msgid "Custom CSS Info"
+msgstr ""
+
+#: includes/views/customcss_options.php:43
+#, php-format
+msgid "You can add your own custom CSS style here, it will not be overwritten during an upgrade of NomNom. Any CSS you add here will override NomNoms default style. <br><br><b>Example:</b><code>.entry-title a { border: 1px solid red; color: green;}</code><br><br>Check this page for <a href=\"%1$s\">some cool CSS snippets</a>"
+msgstr ""
+
+#: includes/views/customcss_options.php:46
+msgid "This will not check the validness of your code, so make sure to use compliant CSS."
 msgstr ""
 
 #: includes/views/general_info_options.php:12
@@ -590,7 +612,7 @@ msgstr ""
 
 #: includes/views/general_info_options.php:14
 #, php-format
-msgid "Click here to go to <a href=\"1%s\"> Theme Options </a> page and select from 10 color schemes and 9 layouts <br> Visit the <a href=\"2%s\">Theme Homepage</a>"
+msgid "Click here to go to <a href=\"%1$s\"> Theme Options </a> page and select from 10 color schemes and 9 layouts <br> Visit the <a href=\"%2$s\">Theme Homepage</a>"
 msgstr ""
 
 #: includes/views/general_info_options.php:17
@@ -618,24 +640,226 @@ msgstr ""
 msgid "Header Options"
 msgstr ""
 
-#: includes/views/help_options.php:5
-msgid "Additional Info"
+#: includes/views/general_options.php:24
+msgid "Choose your header size."
 msgstr ""
 
-#: includes/views/help_options.php:31
-msgid "Commonly used CSS Classes"
+#: includes/views/general_options.php:26
+msgid "Width"
 msgstr ""
 
-#: includes/views/slider_options.php:31
-msgid "Display Slider?"
+#: includes/views/general_options.php:27
+msgid "Recommended 1000px"
 msgstr ""
 
+#: includes/views/general_options.php:31
+msgid "Height"
+msgstr ""
+
+#: includes/views/general_options.php:32
+msgid "Default is 288px"
+msgstr ""
+
+#: includes/views/general_options.php:40
+msgid "Resize the header image here. This will also affect the slider size. It's a good idea to stick with the same header size after resizing if you plan to use the slider."
+msgstr ""
+
+#: includes/views/general_options.php:41
+msgid "You must upload a new header image after setting a size as only new images are resized, if you use an old or default header image, it will display as the size it was originally cropped to."
+msgstr ""
+
+#: includes/views/general_options.php:44
+msgid "Update Header Size"
+msgstr ""
+
+#: includes/views/general_options.php:77
+msgid "Excerpts with Thumbnails or Full"
+msgstr ""
+
+#: includes/views/general_options.php:80
+msgid "Excerpts"
+msgstr ""
+
+#: includes/views/general_options.php:81
+msgid "Full Posts"
+msgstr ""
+
+#: includes/views/general_options.php:82
+msgid "Excerpts will display post thumbnail if a featured image is selected for the post."
+msgstr ""
+
+#: includes/views/general_options.php:89
+msgid "Main Menu Below Header"
+msgstr ""
+
+#: includes/views/general_options.php:92
+#: includes/views/general_options.php:104
+#: includes/views/general_options.php:128
+#: includes/views/general_options.php:140
+#: includes/views/general_options.php:152
 #: includes/views/slider_options.php:34
 msgid "Yes"
 msgstr ""
 
+#: includes/views/general_options.php:93
+#: includes/views/general_options.php:105
+#: includes/views/general_options.php:129
+#: includes/views/general_options.php:141
+#: includes/views/general_options.php:153
 #: includes/views/slider_options.php:35
 msgid "No"
+msgstr ""
+
+#: includes/views/general_options.php:94
+msgid "The menu option controls the main default Twenty Eleven menu in case you just want to use the top one."
+msgstr ""
+
+#: includes/views/general_options.php:101
+msgid "Comment Bubble on Index"
+msgstr ""
+
+#: includes/views/general_options.php:106
+msgid "Choose to display the comment bubble on the index or hide it."
+msgstr ""
+
+#: includes/views/general_options.php:113
+msgid "Comments on/off Site Wide"
+msgstr ""
+
+#: includes/views/general_options.php:116
+msgid "On"
+msgstr ""
+
+#: includes/views/general_options.php:117
+msgid "Off"
+msgstr ""
+
+#: includes/views/general_options.php:118
+msgid "This will turn the comments, comment form and \"leave a comment\" link on/off for all posts and pages."
+msgstr ""
+
+#: includes/views/general_options.php:125
+msgid "Display Related Posts"
+msgstr ""
+
+#: includes/views/general_options.php:130
+msgid "Related posts are displayed under each post if selected."
+msgstr ""
+
+#: includes/views/general_options.php:137
+msgid "Author Post Avatar"
+msgstr ""
+
+#: includes/views/general_options.php:142
+msgid "Author avatars will be displayed next to each post title if turned on."
+msgstr ""
+
+#: includes/views/general_options.php:149
+msgid "Searchform in Header"
+msgstr ""
+
+#: includes/views/general_options.php:154
+msgid "This will turn the searchform in the header on/off."
+msgstr ""
+
+#: includes/views/general_options.php:158
+msgid "Update All Options"
+msgstr ""
+
+#: includes/views/help_options.php:5
+msgid "Additional Info"
+msgstr ""
+
+#: includes/views/help_options.php:12
+#, php-format
+msgid "<b>Wp-PageNavi -</b> This theme is <a href=\"%1$s\">Wp-PageNavi</a> ready. Simply install the plugin and it will appear at the bottom of your page. Preset color schemes have special styles included"
+msgstr ""
+
+#: includes/views/help_options.php:15
+msgid "<b>Header Image -</b> After first install the header image will display as the default Twenty Eleven size 1000 x 288. You <b>must</b> select a header size then upload a new header for your new size to take effect. It's also a good idea to stick with your chosen header size when using the slider"
+msgstr ""
+
+#: includes/views/help_options.php:17
+#, php-format
+msgid "<b>Shortcodes -</b> Shortcodes have been removed as of version 1.5. the reason being, you're stuck with the same theme forever if you want to keep your shortcodes working. So instead, i've created a plugin which will allow you to continue using your current shortcodes even if you switch themes. Grab it here <a href=\"%1$s\">NomNom Shortcodes Plugin</a>"
+msgstr ""
+
+#: includes/views/help_options.php:19
+msgid "<b>Adsense -</b> This theme can display adsene ads within and below the content on single post view and on pages. Open adsense-options.php in the theme directory and paste your adsense code in the commented area. Recommend sizes are 468x60 for bottom adsense and 250x250 or smaller for square content adsense."
+msgstr ""
+
+#: includes/views/help_options.php:21
+#, php-format
+msgid "<b>Dark Scheme style -</b> By default the dark stylesheet gets loaded after the style.css of the child theme. This makes it difficult to edit it in a child theme. A function has been added to NomNom Thanks to <a href=\"%1$s\">http://transformationpowertools.com</a> that allows you to edit this theme. Open includes/css/dark-default.css to make changes to this color scheme."
+msgstr ""
+
+#: includes/views/help_options.php:23
+#, php-format
+msgid "<b>Image issues -</b> If your header image or featured images either on the main page or on the post editor page are not displaying the prper size please do the following. NomNom Options > General Options > select a header size. Upload a new header image after selecting the header size. Selecting a header size should also fix the issue with the large featured image on the post editor page. To fix featured images when switching from another theme, or changing featured image size I suggest installing <a href=\"%1$s\">Ajax Rebuild Thumbnails</a> and running it. This will create proper sizes for all your featured images."
+msgstr ""
+
+#: includes/views/help_options.php:35
+msgid "Commonly used CSS Classes"
+msgstr ""
+
+#: includes/views/help_options.php:42
+msgid "Site title and description"
+msgstr ""
+
+#: includes/views/help_options.php:43
+msgid "Post titles"
+msgstr ""
+
+#: includes/views/help_options.php:44
+msgid "Header searchform"
+msgstr ""
+
+#: includes/views/help_options.php:45
+msgid "NomNom Custom Layout Classes"
+msgstr ""
+
+#: includes/views/help_options.php:46
+msgid "NomNom Custom class for all layouts"
+msgstr ""
+
+#: includes/views/help_options.php:47
+msgid "Twenty Eleven Default Layouts"
+msgstr ""
+
+#: includes/views/help_options.php:48
+msgid "NomNom Menus(default, top, bottom)"
+msgstr ""
+
+#: includes/views/help_options.php:49
+msgid "Sidebars"
+msgstr ""
+
+#: includes/views/help_options.php:50
+msgid "Body Classes"
+msgstr ""
+
+#: includes/views/help_options.php:51
+msgid "Posted on, Posted by, Posted in etc"
+msgstr ""
+
+#: includes/views/help_options.php:52
+msgid "Header"
+msgstr ""
+
+#: includes/views/help_options.php:53
+msgid "Content Layout"
+msgstr ""
+
+#: includes/views/help_options.php:54
+msgid "Increase right sidebar width 4%"
+msgstr ""
+
+#: includes/views/help_options.php:56
+msgid "Widget Titles"
+msgstr ""
+
+#: includes/views/slider_options.php:31
+msgid "Display Slider?"
 msgstr ""
 
 #: includes/views/slider_options.php:40
