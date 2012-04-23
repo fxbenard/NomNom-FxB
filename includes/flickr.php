@@ -4,23 +4,23 @@
 /*---------------------------------------------------------------------------------*/
 class twentyeleven_flickr extends WP_Widget {
 
-	function twentyeleven_flickr() {
-		$widget_ops = array('description' => 'This Flickr widget populates photos from a Flickr ID.' );
+    function twentyeleven_flickr() {
+        $widget_ops = array('description' => 'This Flickr widget populates photos from a Flickr ID.' );
 
-		parent::WP_Widget(false, __('Twenty Eleven - Flickr', 'nomnom'),$widget_ops);      
-	}
+        parent::WP_Widget(false, __('Twenty Eleven - Flickr', 'nomnom'),$widget_ops);      
+    }
 
-	function widget($args, $instance) {  
-		extract( $args );
-		$id = $instance['id'];
-		$number = $instance['number'];
-		$type = $instance['type'];
-		$sorting = $instance['sorting'];
-		$size = $instance['size'];
-		
-		echo $before_widget;
-		echo $before_title; ?>
-		<?php _e('Photos on <span>flick<span>r</span></span>', 'nomnom'); ?>
+    function widget($args, $instance) {  
+        extract( $args );
+        $id = $instance['id'];
+        $number = $instance['number'];
+        $type = $instance['type'];
+        $sorting = $instance['sorting'];
+        $size = $instance['size'];
+        
+        echo $before_widget;
+        echo $before_title; ?>
+        <?php _e('Photos on <span>flick<span>r</span></span>', 'nomnom'); ?>
         <?php echo $after_title; ?>
             
         <div class="wrap">
@@ -29,8 +29,8 @@ class twentyeleven_flickr extends WP_Widget {
             <div class="fix"></div>
         </div>
 
-	   <?php			
-	   echo $after_widget;
+       <?php            
+       echo $after_widget;
    }
 
    function update($new_instance, $old_instance) {                
@@ -38,17 +38,17 @@ class twentyeleven_flickr extends WP_Widget {
    }
 
    function form($instance) {        
-		$id = esc_attr($instance['id']);
-		$number = esc_attr($instance['number']);
-		$type = esc_attr($instance['type']);
-		$sorting = esc_attr($instance['sorting']);
-		$size = esc_attr($instance['size']);
-		?>
+        $id = esc_attr($instance['id']);
+        $number = esc_attr($instance['number']);
+        $type = esc_attr($instance['type']);
+        $sorting = esc_attr($instance['sorting']);
+        $size = esc_attr($instance['size']);
+        ?>
         <p>
-            <label for="<?php echo $this->get_field_id('id'); ?>"><?php _e('Flickr ID (<a href="http://www.idgettr.com">idGettr</a>):'); ?></label>
+            <label for="<?php echo $this->get_field_id('id'); ?>"><?php _e('Flickr ID (<a href="http://www.idgettr.com">idGettr</a>):','nomnom'); ?></label>
             <input type="text" name="<?php echo $this->get_field_name('id'); ?>" value="<?php echo $id; ?>" class="widefat" id="<?php echo $this->get_field_id('id'); ?>" />
         </p>
-       	<p>
+        <p>
             <label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number:', 'nomnom'); ?></label>
             <select name="<?php echo $this->get_field_name('number'); ?>" class="widefat" id="<?php echo $this->get_field_id('number'); ?>">
                 <?php for ( $i = 1; $i <= 10; $i += 1) { ?>
@@ -78,8 +78,8 @@ class twentyeleven_flickr extends WP_Widget {
                 <option value="t" <?php if($size == "t"){ echo "selected='selected'";} ?>><?php _e('Thumbnail', 'nomnom'); ?></option>
             </select>
         </p>
-		<?php
-	}
+        <?php
+    }
 } 
 
 register_widget('twentyeleven_flickr');
