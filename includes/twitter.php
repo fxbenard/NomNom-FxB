@@ -5,7 +5,11 @@
 class twentyeleven_Twitter extends WP_Widget {
 
    function twentyeleven_Twitter() {
+<<<<<<< HEAD
      $widget_ops = array('description' => __('Add your Twitter feed to your sidebar with this widget.','nomnom'));
+=======
+     $widget_ops = array('description' => 'Add your Twitter feed to your sidebar with this widget.' );
+>>>>>>> origin/master
        parent::WP_Widget(false, __('Twenty Eleven - Twitter Stream', 'nomnom'),$widget_ops);      
    }
    
