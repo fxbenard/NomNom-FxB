@@ -260,7 +260,7 @@
 <!-- search in header -->
 <?php  $nomnom_show_search = get_option( 'nomnom_display_search' );  ?>
         <tr valign="top">
-        <th scope="row"><?php _e('Searchform in Header'); ?></th>
+        <th scope="row"><?php _e('Searchform in Header','nomnom'); ?></th>
         <td>
 			<select style="width: 100px;" id="nomnom_show_search">
 			<option value="1" <?php echo ($nomnom_show_search)? "selected='selected'":""; ?> ><?php _e('Yes', 'nomnom');?></option>

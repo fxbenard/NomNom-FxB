@@ -52,7 +52,7 @@
 <p><b><?php _e('Header','nomnom');?></b> <code>#nomnom-header { }</code></p>
 <p><b><?php _e('Content Layout','nomnom');?></b> <code>#primary { } #content { }  #secondary, #extra-sidebar { }</code></p>
 <p><b><?php _e('Increase right sidebar width 4%','nomnom');?></b> <code> #primary { margin: 0 -30.4% 0 0;}  #secondary, #extra-sidebar { width: 22.8%; } #content { width: 56.4%; }</code></p>
-<p><b>Increase left sidebar 4%</b> <code>.left-sidebar #primary { margin: 0 0 0 -30.4%; } .left-sidebar #content { margin: 0 7.6% 0 36%; } .left-sidebar #secondary, .left-sidebar #extra-sidebar { width: 22.8%; }</code></p>
+<p><b><?php _e('Increase left sidebar 4%','nomnom');?></b> <code>.left-sidebar #primary { margin: 0 0 0 -30.4%; } .left-sidebar #content { margin: 0 7.6% 0 36%; } .left-sidebar #secondary, .left-sidebar #extra-sidebar { width: 22.8%; }</code></p>
 <p><b><?php _e('Widget Titles','nomnom');?></b> <code>h3.widget-title, .widget-title { }</code></p>
 <br>										
 				</blockquote>

@@ -69,13 +69,13 @@ function nomnom_twentyeleven_layouts( $layouts ) {
 // Less padding right sidebar layout
 	$layouts['less-right-sidebar'] = array(
 		'value' => 'less-right-sidebar',
-		'label' => __( 'Right Sidebar - Less Padding', 'twentyeleven' ),
+		'label' => __( 'Right Sidebar - Less Padding', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/layouts/less-right.png',
 );
 // Less padding left sidebar layout
 	$layouts['less-left-sidebar'] = array(
 		'value' => 'less-left-sidebar',
-		'label' => __( 'Left Sidebar - Less Padding', 'twentyeleven' ),
+		'label' => __( 'Left Sidebar - Less Padding', 'nomnom' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/images/layouts/less-left.png',
 );
 
