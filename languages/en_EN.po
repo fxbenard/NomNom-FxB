@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nom Nom v.1.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-23 22:45+0100\n"
-"PO-Revision-Date: 2012-04-23 22:45+0100\n"
+"POT-Creation-Date: 2012-04-25 16:19+0100\n"
+"PO-Revision-Date: 2012-04-25 16:19+0100\n"
 "Last-Translator: FxB <fx@fxbenard.com>\n"
 "Language-Team: Scott Dixon\n"
 "MIME-Version: 1.0\n"
@@ -951,6 +951,10 @@ msgstr ""
 
 #: includes/views/help_options.php:54
 msgid "Increase right sidebar width 4%"
+msgstr ""
+
+#: includes/views/help_options.php:55
+msgid "Increase left sidebar 4%"
 msgstr ""
 
 #: includes/views/help_options.php:56

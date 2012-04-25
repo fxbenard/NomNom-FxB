@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NomNom\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-23 22:45+0100\n"
-"PO-Revision-Date: 2012-04-23 22:45+0100\n"
+"POT-Creation-Date: 2012-04-25 16:19+0100\n"
+"PO-Revision-Date: 2012-04-25 16:19+0100\n"
 "Last-Translator: FxB <fx@fxbenard.com>\n"
 "Language-Team: FxB <fx@fxbenard.com>\n"
 "MIME-Version: 1.0\n"
@@ -341,7 +341,7 @@ msgstr "Unique uniquement"
 
 #: includes/flickr.php:8
 msgid "This Flickr widget populates photos from a Flickr ID."
-msgstr ""
+msgstr "Ce widget Flickr affiche des photos d'une ID Flickr."
 
 #: includes/flickr.php:10
 msgid "Twenty Eleven - Flickr"
@@ -425,11 +425,11 @@ msgstr "3 colonnes, 2 barres latérales à droite"
 
 #: includes/theme-options.php:72
 msgid "Right Sidebar - Less Padding"
-msgstr ""
+msgstr "Colonne latérale à droite - Moins de padding"
 
 #: includes/theme-options.php:78
 msgid "Left Sidebar - Less Padding"
-msgstr ""
+msgstr "Colonne latérale à gauche - Moins de padding"
 
 #: includes/theme-options.php:131
 msgid "Orange"
@@ -498,14 +498,12 @@ msgid "Site Preview"
 msgstr "Aperçu du Site"
 
 #: includes/theme-options.php:684
-#, fuzzy
 msgid "Nomnom Options updated..."
-msgstr "Les réglages du site ont été mis à jour."
+msgstr "Les réglages NomNom ont été mis à jour..."
 
 #: includes/theme-options.php:703
-#, fuzzy
 msgid "Custom CSS updated..."
-msgstr "Champ personnalisé mis à jour."
+msgstr "Css personnalisé mis à jour..."
 
 #: includes/theme-options.php:716
 msgid "Nomnom slider updated..."
@@ -513,7 +511,7 @@ msgstr "Diaporama NomNom mis à jour..."
 
 #: includes/twitter.php:9
 msgid "Add your Twitter feed to your sidebar with this widget."
-msgstr ""
+msgstr "Ajouter votre flux Twitter à votre colonne latérale avec ce widget."
 
 #: includes/twitter.php:11
 msgid "Twenty Eleven - Twitter Stream"
@@ -536,17 +534,16 @@ msgid "Limit:"
 msgstr "Limite&nbsp;:"
 
 #: includes/views/color_options.php:6
-#, fuzzy
 msgid "You are currently using a default color scheme."
-msgstr "Vous are currently using a default color scheme."
+msgstr "Vous utiliser actuellement le jeu de couleur par défaut."
 
 #: includes/views/color_options.php:12
 msgid "Navigation Primary Color"
-msgstr "Couleur Menu Principal"
+msgstr "Couleur du menu principal"
 
 #: includes/views/color_options.php:29
 msgid "Blog Title Font"
-msgstr "Police du Titre du Blog"
+msgstr "Police du titre du blog"
 
 #: includes/views/color_options.php:40
 #: includes/views/color_options.php:79
@@ -557,44 +554,36 @@ msgid "Size :"
 msgstr "Taille :"
 
 #: includes/views/color_options.php:52
-#, fuzzy
 msgid "Navigation Secondary Color"
-msgstr "Couleur Menu Principal"
+msgstr "Couleur de la navigation secondaire"
 
 #: includes/views/color_options.php:68
-#, fuzzy
 msgid "Post Title Font"
-msgstr "Police du Titre du Blog"
+msgstr "Police du titre de l'article"
 
 #: includes/views/color_options.php:91
-#, fuzzy
 msgid "Navigation Text Color"
-msgstr "Sélectionner la couleur du texte"
+msgstr "Couleur du texte de navigation"
 
 #: includes/views/color_options.php:107
-#, fuzzy
 msgid "Post Content Font"
-msgstr "Taille du texte personnalisé"
+msgstr "Police du contenu de l'article"
 
 #: includes/views/color_options.php:136
-#, fuzzy
 msgid "Navigation Hover Text Color"
-msgstr "Couleur du texte / des boutons "
+msgstr "Couleur de navigation du texte au survol"
 
 #: includes/views/color_options.php:152
-#, fuzzy
 msgid "Widget Title Font"
-msgstr "Police du Titre du Blog"
+msgstr "Police du titre des widgets."
 
 #: includes/views/color_options.php:175
-#, fuzzy
 msgid "Navigation Hover Background"
-msgstr "Musique de fond (URL) "
+msgstr "Couleur de navigation de fond au survol  "
 
 #: includes/views/color_options.php:192
-#, fuzzy
 msgid "Widget Body Font"
-msgstr "Taille du texte personnalisé"
+msgstr "Police du corps des widgets."
 
 #: includes/views/color_options.php:212
 msgid "Update Color scheme"
@@ -618,13 +607,13 @@ msgid "Custom CSS Info"
 msgstr "Info du css personnalisé"
 
 #: includes/views/customcss_options.php:43
-#, fuzzy, php-format
+#, php-format
 msgid "You can add your own custom CSS style here, it will not be overwritten during an upgrade of NomNom. Any CSS you add here will override NomNoms default style. <br><br><b>Example:</b><code>.entry-title a { border: 1px solid red; color: green;}</code><br><br>Check this page for <a href=\"%1$s\">some cool CSS snippets</a>"
-msgstr "Vous can add your own custom CSS style here, it will not be overwritten during an upgrade of NomNom. Any CSS you add here will override NomNoms default style. <br><br><b>Example:</b><code>.entry-title a { border: 1px solid red; color: green;}</code><br><br>Check this page for <a href=\"%1$s\">some cool CSS snippets</a>"
+msgstr "Vous pouvez ajouter votre propre style CSS personnalisé ici, il ne sera pas écrasé lors d'une mise à jour de NomNom. Toute le CSS vous ajoutez ici remplacera le style par défaut de NomNom. Exemple </b><code>.entry-title a { border: 1px solid red; color: green;}</code><br><br> Consultez cette page pour <a href=\"%1$s\"> de cool snippets CSS</a>"
 
 #: includes/views/customcss_options.php:46
 msgid "This will not check the validness of your code, so make sure to use compliant CSS."
-msgstr ""
+msgstr "Cela ne verifiera pas la validité de votre code, alors assurez-vous d'utiliser du CSS conforme."
 
 #: includes/views/general_info_options.php:12
 msgid "Thanks for using NomNom Twenty Eleven child theme."
@@ -633,12 +622,12 @@ msgstr "Merci d'utiliser NomNom un thème enfant de Twenty Eleven."
 #: includes/views/general_info_options.php:14
 #, php-format
 msgid "Click here to go to <a href=\"%1$s\"> Theme Options </a> page and select from 10 color schemes and 9 layouts <br> Visit the <a href=\"%2$s\">Theme Homepage</a>"
-msgstr "Cliquez ici pour aller sur la page d'<a href=\"%1$s\">options du thème </a> et sélectionnez parmi une combinaison de 10 couleurs et 9 mises en page différentes<br> Visitez la <a href=\"%2$s\">page officielle</a> du thème."
+msgstr "Cliquez ici pour aller sur la page d'<a href=\"%1$s\">options du thème </a> et sélectionnez parmi une combinaison de 10 couleurs et 9 mises en page différentes.<br> Visitez la <a href=\"%2$s\">page officielle</a> du thème."
 
 #: includes/views/general_info_options.php:16
 #, php-format
 msgid "If your having problems, you can check the FAQ and get support on the <a href=\"%s\">Forums</a>"
-msgstr "Si vous avez des problèmes, vous pouvez consulter la FAQ et obtenir de l'aide sur les <a href=\"%s\"> Forums </a>"
+msgstr "Si vous avez des problèmes, vous pouvez consulter la FAQ et obtenir de l'aide sur les <a href=\"%s\"> Forums </a>."
 
 #: includes/views/general_info_options.php:21
 msgid "Follow me on Twitter and Share on Facebook!"
@@ -661,9 +650,8 @@ msgid "Header Options"
 msgstr "Options d'en-tête"
 
 #: includes/views/general_options.php:24
-#, fuzzy
 msgid "Choose your header size."
-msgstr "Choisissez votre méthode de paiement"
+msgstr "Choisissez votre taille d'en-tête."
 
 #: includes/views/general_options.php:26
 msgid "Width"
@@ -678,31 +666,28 @@ msgid "Height"
 msgstr "Hauteur"
 
 #: includes/views/general_options.php:32
-#, fuzzy
 msgid "Default is 288px"
-msgstr "<strong>Il manque le thème par défaut.</strong>"
+msgstr "Par défaut 288px"
 
 #: includes/views/general_options.php:40
 msgid "Resize the header image here. This will also affect the slider size. It's a good idea to stick with the same header size after resizing if you plan to use the slider."
-msgstr ""
+msgstr "Redimensionner l'image d'en-tête ici. Ce sera également affecter la taille du diaporama. C'est une bonne idée de s'en tenir à la même taille d'en-tête après le redimensionnement si vous prévoyez d'utiliser le diaporama."
 
 #: includes/views/general_options.php:41
 msgid "You must upload a new header image after setting a size as only new images are resized, if you use an old or default header image, it will display as the size it was originally cropped to."
-msgstr ""
+msgstr "Vous devez télécharger une nouvelle image d'en-tête après avoir réglé une taille car seules les nouvelles images sont redimensionnées, si vous utilisez une vieille image d'en-tête ou celle par défaut, elle s'affichera à la taille de recadrage originale."
 
 #: includes/views/general_options.php:44
-#, fuzzy
 msgid "Update Header Size"
-msgstr "Taille de l'icône:"
+msgstr "Mise à jour taille de l'entête"
 
 #: includes/views/general_options.php:60
-#, fuzzy
 msgid "Post Options"
-msgstr "Options du type d'article"
+msgstr "Options d'article"
 
 #: includes/views/general_options.php:78
 msgid "Excerpts with Thumbnails or Full"
-msgstr ""
+msgstr "Extraits avec vignettes ou plein"
 
 #: includes/views/general_options.php:81
 msgid "Excerpts"
@@ -710,16 +695,15 @@ msgstr "Extraits"
 
 #: includes/views/general_options.php:82
 msgid "Full Posts"
-msgstr "Articles"
+msgstr "Articles entier"
 
 #: includes/views/general_options.php:83
 msgid "Excerpts will display post thumbnail if a featured image is selected for the post."
-msgstr ""
+msgstr "L'extrait affiche une image à la une, si une image est aussi sélectionné pour l'article."
 
 #: includes/views/general_options.php:89
-#, fuzzy
 msgid "Post date on/off"
-msgstr "<a href=\"%1$s\">Message</a> le <a href=\"%2$s\">%3$s</a> par <a href=\"%4$s\">%5$s</a>"
+msgstr "Jour de publication on/off"
 
 #: includes/views/general_options.php:92
 #: includes/views/general_options.php:103
@@ -732,7 +716,7 @@ msgstr "<a href=\"%1$s\">Message</a> le <a href=\"%2$s\">%3$s</a> par <a href=\"
 #: includes/views/general_options.php:230
 #: includes/views/general_options.php:278
 msgid "On"
-msgstr "Marche"
+msgstr "On"
 
 #: includes/views/general_options.php:93
 #: includes/views/general_options.php:104
@@ -745,70 +729,63 @@ msgstr "Marche"
 #: includes/views/general_options.php:231
 #: includes/views/general_options.php:279
 msgid "Off"
-msgstr "Arrêt"
+msgstr "Off"
 
 #: includes/views/general_options.php:94
 msgid "This will turn the Post Date meta information on or off on the index."
-msgstr ""
+msgstr "Active ou non la méta information Date d'article sur l'index."
 
 #: includes/views/general_options.php:100
-#, fuzzy
 msgid "Post Category on/off"
-msgstr "<a href=\"%1$s\">Message</a> le <a href=\"%2$s\">%3$s</a> par <a href=\"%4$s\">%5$s</a>"
+msgstr "Catégorie d'article on/off"
 
 #: includes/views/general_options.php:105
 msgid "This will turn Post Category meta information on/off on the index."
-msgstr ""
+msgstr "Active ou non la méta information Catégorie d'article sur l'index."
 
 #: includes/views/general_options.php:112
-#, fuzzy
 msgid "Post Tags on/off"
-msgstr "Mots-clefs utilisés dans cet article&nbsp;:"
+msgstr "Mots-clefs d'article on/off"
 
 #: includes/views/general_options.php:117
 msgid "This will turn the Post Tags on or off on the index."
-msgstr ""
+msgstr "Active ou non la méta information Mots-clefs d'article sur l'index."
 
 #: includes/views/general_options.php:124
 msgid "Post Meta on All Single Post Pages"
-msgstr ""
+msgstr "Post Méta sur toutes les pages d'articles simples"
 
 #: includes/views/general_options.php:129
 msgid "This will turn the Post meta information on or off for single post pages."
-msgstr ""
+msgstr "Active ou non les Post Méta sur toutes les pages d'articles simples."
 
 #: includes/views/general_options.php:136
-#, fuzzy
 msgid "Leave Reply on/off"
-msgstr "<span class=\"leave-reply\">Répondre</span>"
+msgstr "Laisser une réponse on/off"
 
 #: includes/views/general_options.php:141
 msgid "This will turn the Leave a Reply link on or off."
-msgstr ""
+msgstr "Active ou non le lien pour Laisser une réponse."
 
 #: includes/views/general_options.php:146
-#, fuzzy
 msgid "Update Post Options"
-msgstr "Options du type d'article"
+msgstr "Mise à jour options d'article"
 
 #: includes/views/general_options.php:159
-#, fuzzy
 msgid "Site Options"
-msgstr "Les réglages du site ont été mis à jour."
+msgstr "Réglages du site"
 
 #: includes/views/general_options.php:178
-#, fuzzy
 msgid "Main Menu Below Header"
-msgstr "Menu du Haut (au-dessus de l'en-tête)"
+msgstr "Menu principal sous l'en-tête"
 
 #: includes/views/general_options.php:183
 msgid "The menu option controls the main default Twenty Eleven menu in case you just want to use the top one."
-msgstr ""
+msgstr "L'option du menu contrôle le menu principal par défaut de Twenty Eleven au cas ou vous vouliez utiliser celui du haut."
 
 #: includes/views/general_options.php:190
-#, fuzzy
 msgid "Comment Bubble on Index"
-msgstr "Le premier commentaire sur tout nouveau site."
+msgstr "Commentaire en bulle sur l'index"
 
 #: includes/views/general_options.php:193
 #: includes/views/general_options.php:243
@@ -826,75 +803,67 @@ msgstr "Non"
 
 #: includes/views/general_options.php:195
 msgid "Choose to display the comment bubble on the index or hide it."
-msgstr ""
+msgstr "Choisir d'afficher ou de cacher les commentaires bulles sur l'index."
 
 #: includes/views/general_options.php:202
-#, fuzzy
 msgid "Post Comments Site Wide on/off"
-msgstr "<a href=\"%s\">Activer/désactiver les commentaires</a>"
+msgstr "Commentaires d'article sur tout le site on/off"
 
 #: includes/views/general_options.php:207
 msgid "This will turn the comments, comment form and leave a Reply link on/off for all posts."
-msgstr ""
+msgstr "Active ou non les commentaires, le formulaire de commentaire et le lien pour Laisser une réponse sur tous les articles."
 
 #: includes/views/general_options.php:214
-#, fuzzy
 msgid "Page Comments Site Wide on/off"
-msgstr "<a href=\"%s\">Activer/désactiver les commentaires</a>"
+msgstr "Commentaires de page sur tout le site on/off"
 
 #: includes/views/general_options.php:219
 msgid "This will turn the comments and comment form on/off for all pages."
-msgstr ""
+msgstr "Active ou non les commentaires, le formulaire de commentaire sur toutes les pages."
 
 #: includes/views/general_options.php:227
-#, fuzzy
 msgid "Minimal Style Comments on/off"
-msgstr "<a href=\"%s\">Activer/désactiver les commentaires</a>"
+msgstr "Commentaires style minimaliste on/off"
 
 #: includes/views/general_options.php:232
 msgid "This displays a more minimal style comment system than the default."
-msgstr ""
+msgstr "Affiche un style plus minimal pour le système des commentaires que celui par défaut."
 
 #: includes/views/general_options.php:240
-#, fuzzy
 msgid "Display Related Posts"
-msgstr "Afficher la liste des entrées complémentaires automatiquement&nbsp;?"
+msgstr "Afficher la liste des articles relatifs"
 
 #: includes/views/general_options.php:245
 msgid "Related posts are displayed under each post if selected."
-msgstr ""
+msgstr "Les articles relatifs sont affichés sous chaque article si selectionné."
 
 #: includes/views/general_options.php:252
-#, fuzzy
 msgid "Author Post Avatar"
-msgstr "Recadrage de l'avatar du groupe"
+msgstr "Avatar de l'auteur"
 
 #: includes/views/general_options.php:257
 msgid "Author avatars will be displayed next to each post title if turned on."
-msgstr ""
+msgstr "Les avatars des auteurs seront affichés à côté de chaque titre d'article si activé."
 
 #: includes/views/general_options.php:263
-#, fuzzy
 msgid "Searchform in Header"
-msgstr "Retirer l&rsquo;image d&rsquo;en-tête"
+msgstr "Formulaire de recherche dans l'entête"
 
 #: includes/views/general_options.php:268
 msgid "This will turn the searchform in the header on/off."
-msgstr ""
+msgstr "Affiche le formulaire de recherche dans l'entête si activé."
 
 #: includes/views/general_options.php:275
-#, fuzzy
 msgid "CSS3 Effects on/off"
-msgstr "Activer les caractères de mise en page."
+msgstr "Effets CSS3  on/off"
 
 #: includes/views/general_options.php:280
 msgid "This will turn all NomNom CSS3 off. (text shadow, box shadow, border-radius)"
-msgstr ""
+msgstr "Active ou non touts les effets CSS3 (l'ombre du texte, l'ombre boîte, border-radius)."
 
 #: includes/views/general_options.php:285
-#, fuzzy
 msgid "Update Site Options"
-msgstr "Les réglages du site ont été mis à jour."
+msgstr "Mise à jour des options du site"
 
 #: includes/views/help_options.php:5
 msgid "Additional Info"
@@ -903,100 +872,94 @@ msgstr "Info supplémentaire"
 #: includes/views/help_options.php:12
 #, php-format
 msgid "<b>Wp-PageNavi -</b> This theme is <a href=\"%1$s\">Wp-PageNavi</a> ready. Simply install the plugin and it will appear at the bottom of your page. Preset color schemes have special styles included"
-msgstr ""
+msgstr "<b>Wp-PageNavi -</b> Ce thème est prêt pour<a href=\"%1$s\">Wp-PageNavi</a>. Il suffit d'installer l'extension et il apparaîtra au bas de votre page.  Les modèles de couleurs prédéfinis ont des styles spéciaux inclus."
 
 #: includes/views/help_options.php:15
 msgid "<b>Header Image -</b> After first install the header image will display as the default Twenty Eleven size 1000 x 288. You <b>must</b> select a header size then upload a new header for your new size to take effect. It's also a good idea to stick with your chosen header size when using the slider"
-msgstr ""
+msgstr "<b>Header Image -</b> Après la première installation l'image d'en-tête s'affiche à la dimension par défaut de Twenty Eleven 1000 x 288. Vous <b>devez</b> sélectionnez une taille d'en-tête, puis télécharger une nouvelle en-tête pour que votre nouvelle dimension prenne effet. C'est aussi une bonne idée de s'en tenir à la dimension de votre tête choisi lorsque vous utiliser le diaporama"
 
 #: includes/views/help_options.php:17
 #, php-format
 msgid "<b>Shortcodes -</b> Shortcodes have been removed as of version 1.5. the reason being, you're stuck with the same theme forever if you want to keep your shortcodes working. So instead, i've created a plugin which will allow you to continue using your current shortcodes even if you switch themes. Grab it here <a href=\"%1$s\">NomNom Shortcodes Plugin</a>"
-msgstr ""
+msgstr "<b>Shortcodes -</b> Les shortcodes ont été retirés depuis la version 1.5. La raison, vous êtes coincé à jamais avec le même thème si vous voulez garder vos shortcodes fonctionnels. Ainsi à la place, j'ai créé une extension qui vous permettra de continuer à utiliser vos shortcodes actuels, même si vous changez de thème. Récupérer-la ici <a href=\"%1$s\">NomNom Shortcodes Plugin</a>."
 
 #: includes/views/help_options.php:19
 msgid "<b>Adsense -</b> This theme can display adsene ads within and below the content on single post view and on pages. Open adsense-options.php in the theme directory and paste your adsense code in the commented area. Recommend sizes are 468x60 for bottom adsense and 250x250 or smaller for square content adsense."
-msgstr ""
+msgstr "<b>Adsense -</b> Ce thème peut afficher des annonces adsense à l'intérieur et en dessous du contenu sur les articles et les pages uniques. Ouvrez adsense-options.php dans le répertoire du thème et coller votre code adsense dans la zone de commentaire. Les dimensions recommandées sont 468x60 pour adsense en bas et 250x250 ou plus petit pour le contenu adsense carré."
 
 #: includes/views/help_options.php:21
 #, php-format
 msgid "<b>Dark Scheme style -</b> By default the dark stylesheet gets loaded after the style.css of the child theme. This makes it difficult to edit it in a child theme. A function has been added to NomNom Thanks to <a href=\"%1$s\">http://transformationpowertools.com</a> that allows you to edit this theme. Open includes/css/dark-default.css to make changes to this color scheme."
-msgstr ""
+msgstr "<b>Dark Scheme style -</b> Par défaut, le style sombre est chargé après le style.css du thème enfant. Il est donc difficile de le modifier dans un thème enfant. Une fonction a été ajoutée à NomNom Merci à Thanks to <a href=\"%1$s\">http://transformationpowertools.com</a> qui vous permet de modifier ce thème. Ouvrir includes/css/dark-default.css pour apporter des modifications à ce jeu de couleurs."
 
 #: includes/views/help_options.php:23
 #, php-format
 msgid "<b>Image issues -</b> If your header image or featured images either on the main page or on the post editor page are not displaying the prper size please do the following. NomNom Options > General Options > select a header size. Upload a new header image after selecting the header size. Selecting a header size should also fix the issue with the large featured image on the post editor page. To fix featured images when switching from another theme, or changing featured image size I suggest installing <a href=\"%1$s\">Ajax Rebuild Thumbnails</a> and running it. This will create proper sizes for all your featured images."
-msgstr ""
+msgstr "<b> Problème avec les images  -</b> Si votre image d'en-tête ou des images en avant soit sur la page principale soit ou la page de l'éditeur ne s' affichent pas dans les bonnes dimensions s'il vous plaît faire ce qui suit. Options  NomNom> Options générales> sélectionnez une taille d'en-tête. Ajouter une nouvelle image d'en-tête après avoir sélectionné la taille de l'en-tête. Sélectionner une taille d'en-tête doit également résoudre le problème avec la grande image en avant sur la page de l'éditeur. Pour reparer les images en avant lorsque vous changer de thème, ou changer la taille de l'image en avant je suggère d'installer et d'utiliser <a href=\"%1$s\">Ajax Rebuild Thumbnails</a>. Cela va créer des tailles appropriées pour toutes vos images."
 
 #: includes/views/help_options.php:35
 msgid "Commonly used CSS Classes"
 msgstr "Communément  les classes CSS utilisées"
 
 #: includes/views/help_options.php:42
-#, fuzzy
 msgid "Site title and description"
-msgstr "Description \"par dessus\" sur le titre"
+msgstr "Titre du site et description"
 
 #: includes/views/help_options.php:43
-#, fuzzy
 msgid "Post titles"
-msgstr "ATTENTION : vous devez détruire la feuille de style customisée actuelle %s avant que l'extension puisse écrire le dossier. %sBesoin d'Aide ?%s"
+msgstr "Titres des articles"
 
 #: includes/views/help_options.php:44
-#, fuzzy
 msgid "Header searchform"
-msgstr "Image d'entête"
+msgstr "Formulaire de recherche de l'entête"
 
 #: includes/views/help_options.php:45
 msgid "NomNom Custom Layout Classes"
-msgstr ""
+msgstr "NomNom custom layout classes"
 
 #: includes/views/help_options.php:46
 msgid "NomNom Custom class for all layouts"
-msgstr ""
+msgstr "NomNom custom class pour tous les layouts"
 
 #: includes/views/help_options.php:47
-#, fuzzy
 msgid "Twenty Eleven Default Layouts"
-msgstr "Twenty Eleven - Flux Twitter"
+msgstr "Mises en page par défaut de Twenty Eleven"
 
 #: includes/views/help_options.php:48
 msgid "NomNom Menus(default, top, bottom)"
-msgstr ""
+msgstr "Menus NomNom (par défaut, haut, bas)"
 
 #: includes/views/help_options.php:49
-#, fuzzy
 msgid "Sidebars"
-msgstr "Aucune colonne latérale définie"
+msgstr "Colonnes latérales"
 
 #: includes/views/help_options.php:50
-#, fuzzy
 msgid "Body Classes"
-msgstr "Classes de livraison"
+msgstr "Body classes"
 
 #: includes/views/help_options.php:51
-#, fuzzy
 msgid "Posted on, Posted by, Posted in etc"
-msgstr "<span class=\"%1$s\">Publié le</span> %2$s <span class=\"meta-sep\">par</span> %3$s"
+msgstr "Publié le, publié par, publié dans etc"
 
 #: includes/views/help_options.php:52
-#, fuzzy
 msgid "Header"
 msgstr "En-tête"
 
 #: includes/views/help_options.php:53
-#, fuzzy
 msgid "Content Layout"
-msgstr "Mise en page par défaut"
+msgstr "Mise en page du contenu"
 
 #: includes/views/help_options.php:54
 msgid "Increase right sidebar width 4%"
-msgstr ""
+msgstr "Augmenter la largeur de la colonne latérale droite de 4%"
+
+#: includes/views/help_options.php:55
+msgid "Increase left sidebar 4%"
+msgstr "Augmenter la colonne latérale gauche de 4%"
 
 #: includes/views/help_options.php:56
-#, fuzzy
 msgid "Widget Titles"
-msgstr "ATTENTION : vous devez détruire la feuille de style customisée actuelle %s avant que l'extension puisse écrire le dossier. %sBesoin d'Aide ?%s"
+msgstr "Titres des widgets"
 
 #: includes/views/slider_options.php:31
 msgid "Display Slider?"
@@ -1007,18 +970,16 @@ msgid "Number of posts to display?"
 msgstr "Nombre d&rsquo;articles à afficher&nbsp;?"
 
 #: includes/views/slider_options.php:49
-#, fuzzy
 msgid "Featured Category?"
-msgstr "Catégories d'événement"
+msgstr "Catégories en avant ?"
 
 #: includes/views/slider_options.php:71
 msgid "Transition Effect"
 msgstr "Effet de transition "
 
 #: includes/views/slider_options.php:75
-#, fuzzy
 msgid "Fold"
-msgstr "Suivre"
+msgstr "Pliant"
 
 #: includes/views/slider_options.php:76
 msgid "Fade"
@@ -1026,45 +987,43 @@ msgstr "Disparition"
 
 #: includes/views/slider_options.php:77
 msgid "sliceUp"
-msgstr ""
+msgstr "sliceUp"
 
 #: includes/views/slider_options.php:78
 msgid "sliceUpLeft"
-msgstr ""
+msgstr "sliceUpLeft"
 
 #: includes/views/slider_options.php:79
 msgid "sliceDown"
-msgstr ""
+msgstr "sliceDown"
 
 #: includes/views/slider_options.php:80
 msgid "sliceDownLeft"
-msgstr ""
+msgstr "sliceDownLeft"
 
 #: includes/views/slider_options.php:81
 msgid "sliceUpDown"
-msgstr ""
+msgstr "sliceUpDown"
 
 #: includes/views/slider_options.php:82
 msgid "sliceUpDownLeft"
-msgstr ""
+msgstr "sliceUpDownLeft"
 
 #: includes/views/slider_options.php:83
 msgid "slideInLeft"
-msgstr ""
+msgstr "slideInLeft"
 
 #: includes/views/slider_options.php:84
 msgid "slideInRight"
-msgstr ""
+msgstr "slideInRight"
 
 #: includes/views/slider_options.php:94
-#, fuzzy
 msgid "Transition Speed"
-msgstr "Vitesse Shutter"
+msgstr "Vitesse de transition"
 
 #: includes/views/slider_options.php:99
-#, fuzzy
 msgid "Image Pause"
-msgstr "Choisir image"
+msgstr "Pause image"
 
 #: includes/views/slider_options.php:107
 msgid "Transition Speed and Image Pause times are in millisecond 1000ms = 1sec, there is a limit of 90000 ms or 90 sec for Image Pause and 9000 ms or 9 sec for Transition Speed."
@@ -1076,7 +1035,7 @@ msgstr "Ne jamais régler la vitesse de transition plus élevée que le temps de
 
 #: includes/views/slider_options.php:110
 msgid "Slider images are pulled from posts that have a featured image set. If you don't see any images in the slider after selecting the category, make sure you have set a featured image."
-msgstr ""
+msgstr "Les images du diaporama sont tirées des articles qui ont une série d'images en avant. Si vous ne voyez pas les images dans le diaporama après avoir sélectionné la catégorie, assurez-vous que vous avez défini une image en avant."
 
 #: includes/views/slider_options.php:114
 msgid "Update Slider Options"
